@@ -185,3 +185,10 @@ a:active{
     color:paleturquoise;
     text-decoration: underline;
 }
+
+/* Change CSS based on screen size*/
+@media only screen and (max-width:600px){
+    .flex-container{
+        flex-wrap:wrap;
+    }
+}
