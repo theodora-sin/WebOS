@@ -67,21 +67,24 @@ p{
 .question{
     font-size: var(--font-size);
     color:black;
-    padding:16px;
-    margin-top: 1.5em;
+    padding: 8px 0 16px;
+    margin-top: 1em;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    gap: 18px;
     align-items: start;
 }
-.answer-choice{
+.answer-choice {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    min-width: 0;
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
 }
+
 
 /*image*/
 .logo-link{
@@ -117,7 +120,7 @@ p{
     max-width: 180px;
     height: 140px;
     object-fit: cover;
-    margin: 0;
+    margin: 0 0 10px;
     padding: 0;
     border-radius: 6px;
     display: block;
@@ -133,7 +136,7 @@ button{
     text-align: center;
     display: inline-block;
     font-size: 16px;
-    margin: 10px 0 0;
+    margin: 0;
     cursor: pointer;
     border-radius: 4px;
     width: 100%;
