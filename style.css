@@ -74,10 +74,10 @@ p{
     justify-content: center;
     gap: 16px;
 }
-.answer-choice {
-    max-width: 220px;
-    margin: 5px;
-    text-align: center;
+.answer-choice{
+    width:0 1 200px;
+    margin:5px;
+    text-align:center;
 }
 
 /*image*/
@@ -110,11 +110,12 @@ p{
     justify-content:center;
 }
 .quizimg{
-    width: 100%;
+    width: 200px;
     max-height: 160px; 
     object-fit: cover;
     margin:0;
     padding:0;
+    border-radius:6px;
 }
 /*button*/
 button{
