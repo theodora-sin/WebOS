@@ -70,9 +70,14 @@ p{
     padding:16px;
     margin-top: 2em;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
 }
 .answer-choice {
-  margin: 5px;
+    max-width: 220px;
+    margin: 5px;
+    text-align: center;
 }
 
 /*image*/
@@ -106,10 +111,10 @@ p{
 }
 .quizimg{
     width: 100%;
-    height: auto;
-    object-fit: contain;
-    margin: var(--margin);
-    padding:20px;
+    max-height: 160px; 
+    object-fit: cover;
+    margin:0;
+    padding:0;
 }
 /*button*/
 button{
