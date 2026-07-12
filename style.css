@@ -69,10 +69,11 @@ p{
     color:black;
     padding: 8px 0 16px;
     margin-top: 1em;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(180px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 18px;
-    align-items: start;
+    align-items: flex-start;
 }
 .answer-choice {
     display: flex;
@@ -80,9 +81,10 @@ p{
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    width: 100%;
+    flex: 1 1 180px;
     max-width: 220px;
-    margin: 0 auto;
+    min-width: 180px;
+    margin: 0;
 }
 
 
