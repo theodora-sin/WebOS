@@ -68,16 +68,19 @@ p{
     font-size: var(--font-size);
     color:black;
     padding:16px;
-    margin-top: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-top: 1.5em;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 16px;
+    align-items: start;
 }
 .answer-choice{
-    width:0 1 200px;
-    margin:5px;
-    text-align:center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    min-width: 0;
 }
 
 /*image*/
@@ -110,12 +113,14 @@ p{
     justify-content:center;
 }
 .quizimg{
-    width: 200px;
-    max-height: 160px; 
+    width: 100%;
+    max-width: 180px;
+    height: 140px;
     object-fit: cover;
-    margin:0;
-    padding:0;
-    border-radius:6px;
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+    display: block;
 }
 /*button*/
 button{
@@ -128,9 +133,13 @@ button{
     text-align: center;
     display: inline-block;
     font-size: 16px;
-    margin: var(--margin);
+    margin: 10px 0 0;
     cursor: pointer;
     border-radius: 4px;
+    width: 100%;
+    max-width: 180px;
+    white-space: normal;
+    line-height: 1.2;
 }
 #displayResult {
     background-color: navy;
@@ -193,8 +202,19 @@ a:active{
 }
 
 /* Change CSS based on screen size*/
+@media only screen and (max-width:900px){
+    .question{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
 @media only screen and (max-width:600px){
-    .flex-container{
-        flex-wrap:wrap;
+    .question{
+        grid-template-columns: 1fr;
+    }
+
+    .quizimg{
+        max-width: 100%;
+        height: 160px;
     }
 }
