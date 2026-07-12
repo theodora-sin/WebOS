@@ -23,6 +23,10 @@ header{
 .food{
     background-color:rgb(183, 157, 255);
 }
+.quiz{
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    background-color:#ADD8E6;
+}
 
 /*style Text*/
 main{
@@ -56,6 +60,21 @@ p{
     font-size:16px;
     text-align:left;
 }
+.quizh1{
+  font-style: italic;
+  color: #0d9c90;
+}
+.question{
+    font-size: var(--font-size);
+    color:black;
+    padding:16px;
+    margin-top: 2em;
+    display: flex;
+}
+.answer-choice {
+  margin: 5px;
+}
+
 /*image*/
 .logo-link{
     display:inline-flex;
@@ -85,6 +104,24 @@ p{
     align-items:center;
     justify-content:center;
 }
+.quizimg{
+    height: 10em;
+}
+/*button*/
+button{
+  margin-top: 5px;
+  padding:12px 24px;
+  font-size:18px;
+  cursor:pointer;
+}
+#displayResult {
+  width: 300px;
+}
+
+#restart {
+  width: 150px;
+}
+
 /* navigation bar*/
 ul{
     list-style: none;
