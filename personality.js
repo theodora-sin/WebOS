@@ -162,31 +162,13 @@ function restartQuiz(){
 }
 
 function enableBtn() {
-  document.getElementById("q1a1").disabled = false;btn.style.display="";
-  document.getElementById("q1a2").disabled = false;btn.style.display="";
-  document.getElementById("q1a3").disabled = false;btn.style.display="";
-  document.getElementById("q1a4").disabled = false;btn.style.display="";
-
-  document.getElementById("q2a1").disabled = false;btn.style.display="";
-  document.getElementById("q2a2").disabled = false;btn.style.display="";
-  document.getElementById("q2a3").disabled = false;btn.style.display="";
-  document.getElementById("q2a4").disabled = false;btn.style.display="";
-
-  document.getElementById("q3a1").disabled = false;btn.style.display="";
-  document.getElementById("q3a2").disabled = false;btn.style.display="";
-  document.getElementById("q3a3").disabled = false;btn.style.display="";
-  document.getElementById("q3a4").disabled = false;btn.style.display="";
-
-  document.getElementById("q4a1").disabled = false;btn.style.display="";
-  document.getElementById("q4a2").disabled = false;btn.style.display="";
-  document.getElementById("q4a3").disabled = false;btn.style.display="";
-  document.getElementById("q4a4").disabled = false;btn.style.display="";
-
-  document.getElementById("q5a1").disabled = false;btn.style.display="";
-  document.getElementById("q5a2").disabled = false;btn.style.display="";
-  document.getElementById("q5a3").disabled = false;btn.style.display="";
-  document.getElementById("q5a4").disabled = false;btn.style.display="";
-
+  for (let q = 1; q <= 5; q++) {
+    for(let a=1; a<=4; a++){
+        let btn = document.getElementById(`q${q}a${a}`);
+        btn.disabled = false;
+        btn.style.display = "";
+    }
+  }
 }
 
 
