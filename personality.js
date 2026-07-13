@@ -74,28 +74,40 @@ function SpiceAdventureSeeker(){
   SpiceAdventureSeekerscore +=1;
   questionCount +=1;
   console.log("questionCount=" + questionCount+ "SpiceAdventureSeekerscore=" +SpiceAdventureSeekerscore);
-  console.log("The quiz is done")
+  if(questionCount==5){
+    console.log("The quiz has done")
+    updateresult();
+  }
 }
 
 function ComfortCozyDiner(){
   ComfortCozyDinerscore +=1;
   questionCount +=1;
   console.log("questionCount=" + questionCount+ "ComfortCozyDinerscore=" +ComfortCozyDinerscore);
-  console.log("The quiz is done")
+  if(questionCount==5){
+    console.log("The quiz has done")
+    updateresult();
+  }
 }
 
 function FreshCrispEnthusiast(){
   FreshCrispEnthusiastscore +=1;
   questionCount +=1;
   console.log("questionCount=" + questionCount+ "FreshCrispEnthusiastscore=" +FreshCrispEnthusiastscore);
-  console.log("The quiz is done")
+  if(questionCount==5){
+    console.log("The quiz has done")
+    updateresult();
+  }
 }
 
 function SweetandDecadent(){
   SweetandDecadentscore +=1;
   questionCount +=1;
   console.log("questionCount=" + questionCount+ "SweetandDecadentscore=" +SweetandDecadentscore);
-  console.log("The quiz is done")
+  if(questionCount==5){
+    console.log("The quiz has done")
+    updateresult();
+  }
 }
 
 function updateresult(){
