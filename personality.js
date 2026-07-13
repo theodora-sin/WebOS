@@ -41,109 +41,94 @@ var q5a3=document.getElementById("q5a3");
 var q5a4=document.getElementById("q5a4");
 
 
-function handleAnswer(scoreFunction, questionNumber) {
-  scoreFunction();
-  disableQuestion(questionNumber);
-}
-
 //Listen for click on answer button and call function if clicked
-button.addEventListener("click", updateresult);
+button.addEventListener("click",updateresult,);
 restart.addEventListener("click", restartQuiz);
-q1a1.addEventListener("click", function () { handleAnswer(ComfortCozyDiner, 1); });
-q1a2.addEventListener("click", function () { handleAnswer(FreshCrispEnthusiast, 1); });
-q1a3.addEventListener("click", function () { handleAnswer(SpiceAdventureSeeker, 1); });
-q1a4.addEventListener("click", function () { handleAnswer(SweetandDecadent, 1); });
+q1a1.addEventListener("click",function (){ComfortCozyDiner;disableQuestion(1)});
+q1a2.addEventListener("click",function (){FreshCrispEnthusiast;disableQuestion(1)});
+q1a3.addEventListener("click",function (){SpiceAdventureSeeker;disableQuestion(1)});
+q1a4.addEventListener("click",function (){SweetandDecadent;disableQuestion(1)});
 
-q2a1.addEventListener("click", function () { handleAnswer(SpiceAdventureSeeker, 2); });
-q2a2.addEventListener("click", function () { handleAnswer(SweetandDecadent, 2); });
-q2a3.addEventListener("click", function () { handleAnswer(FreshCrispEnthusiast, 2); });
-q2a4.addEventListener("click", function () { handleAnswer(ComfortCozyDiner, 2); });
+q2a1.addEventListener("click",function (){SpiceAdventureSeeker;disableQuestion(2)});
+q2a2.addEventListener("click",function (){SweetandDecadent;disableQuestion(2)});
+q2a3.addEventListener("click",function (){FreshCrispEnthusiast;disableQuestion(2)});
+q2a4.addEventListener("click",function (){ComfortCozyDiner;disableQuestion(2)});
 
-q3a1.addEventListener("click", function () { handleAnswer(SpiceAdventureSeeker, 3); });
-q3a2.addEventListener("click", function () { handleAnswer(ComfortCozyDiner, 3); });
-q3a3.addEventListener("click", function () { handleAnswer(FreshCrispEnthusiast, 3); });
-q3a4.addEventListener("click", function () { handleAnswer(SweetandDecadent, 3); });
+q3a1.addEventListener("click",function (){SpiceAdventureSeeker;disableQuestion(3)});
+q3a2.addEventListener("click",function (){ComfortCozyDiner;disableQuestion(3)});
+q3a3.addEventListener("click",function (){FreshCrispEnthusiast;disableQuestion(3)});
+q3a4.addEventListener("click",function (){SweetandDecadent;disableQuestion(3)});
 
-q4a1.addEventListener("click", function () { handleAnswer(SpiceAdventureSeeker, 4); });
-q4a3.addEventListener("click", function () { handleAnswer(ComfortCozyDiner, 4); });
-q4a2.addEventListener("click", function () { handleAnswer(FreshCrispEnthusiast, 4); });
-q4a4.addEventListener("click", function () { handleAnswer(SweetandDecadent, 4); });
+q4a1.addEventListener("click",function (){SpiceAdventureSeeker;disableQuestion(4)});
+q4a3.addEventListener("click",function (){ComfortCozyDiner;disableQuestion(4)});
+q4a2.addEventListener("click",function (){FreshCrispEnthusiast;disableQuestion(4)});
+q4a4.addEventListener("click",function (){SweetandDecadent;disableQuestion(4)});
 
-q5a1.addEventListener("click", function () { handleAnswer(SpiceAdventureSeeker, 5); });
-q5a2.addEventListener("click", function () { handleAnswer(ComfortCozyDiner, 5); });
-q5a3.addEventListener("click", function () { handleAnswer(FreshCrispEnthusiast, 5); });
-q5a4.addEventListener("click", function () { handleAnswer(SweetandDecadent, 5); });
+q5a1.addEventListener("click",function (){SpiceAdventureSeeker;disableQuestion(5)});
+q5a2.addEventListener("click",function (){ComfortCozyDiner;disableQuestion(5)});
+q5a3.addEventListener("click",function (){FreshCrispEnthusiast;disableQuestion(5)});
+q5a4.addEventListener("click",function (){SweetandDecadent;disableQuestion(5)});
 
 //Track score:
 function SpiceAdventureSeeker(){
   SpiceAdventureSeekerscore +=1;
   questionCount +=1;
-  
   console.log("questionCount=" + questionCount+ "SpiceAdventureSeekerscore=" +SpiceAdventureSeekerscore);
-  if (questionCount==5){
   console.log("The quiz is done")
-  updateresult(); 
 }
-             }
 
 function ComfortCozyDiner(){
   ComfortCozyDinerscore +=1;
   questionCount +=1;
   console.log("questionCount=" + questionCount+ "ComfortCozyDinerscore=" +ComfortCozyDinerscore);
-  if (questionCount==5){
   console.log("The quiz is done")
-  updateresult();
 }
-             }
 
 function FreshCrispEnthusiast(){
   FreshCrispEnthusiastscore +=1;
   questionCount +=1;
   console.log("questionCount=" + questionCount+ "FreshCrispEnthusiastscore=" +FreshCrispEnthusiastscore);
-  if (questionCount==5){
   console.log("The quiz is done")
-  updateresult();
 }
-             }
 
 function SweetandDecadent(){
   SweetandDecadentscore +=1;
   questionCount +=1;
   console.log("questionCount=" + questionCount+ "SweetandDecadentscore=" +SweetandDecadentscore);
-  if (questionCount==5){
   console.log("The quiz is done")
-  updateresult();
- 
-}
 }
 
 function updateresult(){
   if (SpiceAdventureSeekerscore >= 3) {
-    result.innerHTML = "You are a Spice Adventure Seeker!";
-    result.innerHTML = "Recommend dish:Phall";
-    result.innerHTML = "Extrmely spicy, tomato-based Indian curry";
-    result.innerHTML = `<img src="assets/phall.jpg" alt="phall curry",class="quizimg">`;
+    result.innerHTML = `
+    <h3>You are a Spice Adventure Seeker!</h3>
+    <p><strong>Recommended dish:</strong> Phall</p>
+    <p>Extremely spicy, tomato-based Indian curry.</p>
+    <img src="assets/phall.jpg" alt="Phall curry" class="quizimg">`;
     console.log("You are a Spice Adventure Seeker!");
   }
   else if (ComfortCozyDinerscore >= 3) {
-    result.innerHTML = "You are a Comfort Cozy Diner!";
-    result.innerHTML = "Recommend dish:Budae-jiigae";
-    result.innerHTML ="Heartyfusion hot pot combine with hot dogs,spam,kimchi, instant ramen,korean chill paste and cheese and egg.";
-    result.innerHTML = `<img src="assets/Budae-jiigae.jpg" alt="budae jiigae",class="quizimg">`;
+    result.innerHTML =`
+    <h3>You are a Comfort Cozy Diner!</h3>
+    <p>Recommend dish:Budae-jiigae"</p>
+    <p>Heartyfusion hot pot combine with hot dogs,spam,kimchi, instant ramen,korean chill paste and cheese and egg.</p>
+    <img src="assets/Budae-jiigae.jpg" alt="budae jiigae",class="quizimg">`;
     console.log("You are a Comfort Cozy Diner!");
   }
   else if (FreshCrispEnthusiastscore >= 3) {
-    result.innerHTML = "You are a Fresh Crisp Enthusiast!";
-    result.innerHTML = "Recommend dish:Bánh Xèo";
-    result.innerHTML = "Crispy,savory Vietnamese crêpe, stuffedwith pork, prawns, mung beans and bean sprouts.";
-    result.innerHTML = `<img src=assets/bánh xèo.jpg" alt="bánh xèo", class= "quizimg">`;
+    result.innerHTML = `
+    <h3>You are a Fresh Crisp Enthusiast!</h3>
+    <p>Recommend dish:Bánh Xèo</p>
+    <p>Crispy,savory Vietnamese crêpe, stuffedwith pork, prawns, mung beans and bean sprouts.</p>
+    <img src="assets/bánh xèo.jpg" alt="bánh xèo", class= "quizimg">`;
     console.log("You are a Fresh Crisp Enthusiast!");
   }
   else if (SweetandDecadentscore >= 3) {
-    result.innerHTML = "You are a Sweet and Decadent!";
-    result.innerHTML = "Recommend dish:Baklava";
-    result.innerHTML= "A rich, sweet pastry made of multiple layers of paper-thin phyllo dough, chopped nuts, and sweet honey or sugar syrup";
-    result.innerHTML = `<img src="assets/baklava.jpg" alt="baklava",class="quizimg">`;
+    result.innerHTML = `
+    <h3>You are a Sweet and Decadent!</h3>
+    <p>Recommend dish:Baklava</p>
+    <p>A rich, sweet pastry made of multiple layers of paper-thin phyllo dough, chopped nuts, and sweet honey or sugar syrup.</p>
+    <img src="assets/baklava.jpg" alt="baklava",class="quizimg">`;
     console.log("You are a Comfort Cozy Diner!");
     console.log("You are Sweet and Decadent!");
   }
