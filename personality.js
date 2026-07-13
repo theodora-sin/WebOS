@@ -140,7 +140,7 @@ function updateresult(){
     <h3>You are a Sweet and Decadent!</h3>
     <p>Recommend dish:Baklava</p>
     <p>A rich, sweet pastry made of multiple layers of paper-thin phyllo dough, chopped nuts, and sweet honey or sugar syrup.</p>
-    <img src="assets/baklava.jpg" alt="baklava",class="quizimg">`;
+    <img src="assets/baklava.jpg" alt="baklava", class="quizimg">`;
     console.log("You are a Comfort Cozy Diner!");
     console.log("You are Sweet and Decadent!");
   }
