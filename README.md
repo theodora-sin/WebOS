@@ -26,3 +26,4 @@ Phall:https://en.wikipedia.org/wiki/Phall
 baklava: https://pixabay.com/photos/food-eastern-sweets-baklava-sweet-5158702/
 Banh xeo:https://pixabay.com/photos/b%C3%A1nh-x%C3%A8o-food-dish-meal-cuisine-5602960/
 Budae jjigae: https://pixabay.com/photos/budae-jjigae-noodles-soup-kimchi-10220558/
+bubble tea(favicon)https://pixabay.com/photos/drink-cup-food-cup-containers-tea-3545791/
