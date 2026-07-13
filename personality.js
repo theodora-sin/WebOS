@@ -44,14 +44,14 @@ var q5a4=document.getElementById("q5a4");
 //Listen for click on answer button and call function if clicked
 button.addEventListener("click",updateresult);
 restart.addEventListener("click", restartQuiz);
-q1a1.addEventListener("click",function (){ComfortCozyDiner();disableQuestion(1)});
+q1a1.addEventListener("click",function (){SweetandDecadent();disableQuestion(1)});
 q1a2.addEventListener("click",function (){FreshCrispEnthusiast();disableQuestion(1)});
 q1a3.addEventListener("click",function (){SpiceAdventureSeeker();disableQuestion(1)});
-q1a4.addEventListener("click",function (){SweetandDecadent();disableQuestion(1)});
+q1a4.addEventListener("click",function (){ComfortCozyDiner();disableQuestion(1)});
 
 q2a1.addEventListener("click",function (){SpiceAdventureSeeker();disableQuestion(2)});
-q2a2.addEventListener("click",function (){SweetandDecadent();disableQuestion(2)});
-q2a3.addEventListener("click",function (){FreshCrispEnthusiast();disableQuestion(2)});
+q2a2.addEventListener("click",function (){FreshCrispEnthusiast();disableQuestion(2)});
+q2a3.addEventListener("click",function (){SweetandDecadent();disableQuestion(2)});
 q2a4.addEventListener("click",function (){ComfortCozyDiner();disableQuestion(2)});
 
 q3a1.addEventListener("click",function (){SpiceAdventureSeeker();disableQuestion(3)});
@@ -61,8 +61,8 @@ q3a4.addEventListener("click",function (){SweetandDecadent();disableQuestion(3)}
 
 q4a1.addEventListener("click",function (){SpiceAdventureSeeker();disableQuestion(4)});
 q4a2.addEventListener("click",function (){FreshCrispEnthusiast();disableQuestion(4)});
-q4a3.addEventListener("click",function (){ComfortCozyDiner();disableQuestion(4)});
-q4a4.addEventListener("click",function (){SweetandDecadent();disableQuestion(4)});
+q4a3.addEventListener("click",function (){SweetandDecadent();disableQuestion(4)});
+q4a4.addEventListener("click",function (){ComfortCozyDiner();disableQuestion(4)});
 
 q5a1.addEventListener("click",function (){SpiceAdventureSeeker();disableQuestion(5)});
 q5a2.addEventListener("click",function (){ComfortCozyDiner();disableQuestion(5)});
@@ -191,6 +191,8 @@ function enableBtn() {
 
 function disableQuestion(questionNumber) {
   for (let i = 1; i <= 4; i++) {
-document.getElementById(`q${questionNumber}a${i}`).disabled = true;
+    let btn = document.getElementById(`q${questionNumber}a${i}`);
+    btn.disabled = true;
+    btn.style.display = "none";
   }
 }
