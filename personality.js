@@ -7,7 +7,7 @@ var questionCount=0;// Store the number of answers
 
 //Store HTML using the DOM
 var result= document.getElementById("result");
-var button= document.getElementById("displayResult")
+var button= document.getElementById("displayResult");
 var restart = document.getElementById("restart");
 
 //Question 1
