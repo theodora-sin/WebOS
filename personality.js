@@ -42,7 +42,7 @@ var q5a4=document.getElementById("q5a4");
 
 
 //Listen for click on answer button and call function if clicked
-button.addEventListener("click",updateresult,);
+button.addEventListener("click",updateresult);
 restart.addEventListener("click", restartQuiz);
 q1a1.addEventListener("click",function (){ComfortCozyDiner();disableQuestion(1)});
 q1a2.addEventListener("click",function (){FreshCrispEnthusiast();disableQuestion(1)});
@@ -60,16 +60,14 @@ q3a3.addEventListener("click",function (){FreshCrispEnthusiast();disableQuestion
 q3a4.addEventListener("click",function (){SweetandDecadent();disableQuestion(3)});
 
 q4a1.addEventListener("click",function (){SpiceAdventureSeeker();disableQuestion(4)});
-q4a3.addEventListener("click",function (){ComfortCozyDiner();disableQuestion(4)});
 q4a2.addEventListener("click",function (){FreshCrispEnthusiast();disableQuestion(4)});
+q4a3.addEventListener("click",function (){ComfortCozyDiner();disableQuestion(4)});
 q4a4.addEventListener("click",function (){SweetandDecadent();disableQuestion(4)});
 
 q5a1.addEventListener("click",function (){SpiceAdventureSeeker();disableQuestion(5)});
 q5a2.addEventListener("click",function (){ComfortCozyDiner();disableQuestion(5)});
 q5a3.addEventListener("click",function (){FreshCrispEnthusiast();disableQuestion(5)});
 q5a4.addEventListener("click",function (){SweetandDecadent();disableQuestion(5)});
-
-//Track score:
 
 //Track score:
 function SpiceAdventureSeeker(){
