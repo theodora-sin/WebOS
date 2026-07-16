@@ -9,19 +9,13 @@
 header{
     color:black
 }
-html,body{
-    margin:0;
-    padding:0;
-    height:100%;
-    min-height:100vh;
-}
 /*style background*/
-.index{
+body.index{
+    min-height:100vh;
     background-image:url("assets/index.png");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    background-attachment:fixed;
 }
 .portfolio{
     background:#ffeefb;
