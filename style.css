@@ -208,6 +208,30 @@ a:active{
     color:paleturquoise;
     text-decoration: underline;
 }
+/*game*/
+.recipe-layout{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:30 px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+.recipe-left{
+    flex:1
+}
+.recipe-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.recipe-image {
+    width: 300px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
 
 /* Change CSS based on screen size*/
 @media only screen and (max-width:900px){
