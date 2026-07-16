@@ -54,7 +54,7 @@ const countries = {
     ingredients:[
         "Main: 150 g ground meat (chicken or beef or pork), 3 garlic cloved(minced), 1 to 2 thai bird's eye chilies",
         "Herb: 1 cup fresh holy basil or Thai sweet basil leaves",
-        "Sause: 1 tbsp oyster sause,1tspsoy sause, 1tsp dark soy sause, 1 tsp fish sause and 1/2 tsp sugar",
+        "Sause: 1 tbsp oyster sause, 1tsp soy sause, 1tsp dark soy sause, 1 tsp fish sause and 1/2 tsp sugar",
         "Serve: 1 fried egg and hot cooked jasmine rice"
     ],
     steps:[
