@@ -271,7 +271,7 @@ function recipeScreen(countryName) {
   buttonContainer.className="button-container";
   buttonContainer.append(backBtn,homeBtn);
     
-  container.append(title, dish,image, ingredientsTitle, ingredients, instructionsTitle, stepsContainer, Words,backBtn, homeBtn);
+   container.append(title, dish,recipeLayout, ingredientsTitle,stepsContainer, Words,buttonContainer);
 }
 
 /*Screen loading*/
