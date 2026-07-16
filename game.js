@@ -192,17 +192,20 @@ function countryScreen() {
   const title = document.createElement("h2");
   title.textContent = "Choose a Country";
   container.appendChild(title);
+
+  const buttonGrid= document.createElement("div");
+  buttonGrid.className="country-button-grid";
   Object.keys(countries).forEach(name => {
     const btn = document.createElement("button");
     btn.textContent = `${name} ${countries[name].flag}`;
     btn.className = "game-button";
     btn.onclick = () => recipeScreen(name);
-
-    container.appendChild(btn);
-    container.appendChild(document.createElement("br"));
+    buttonGrid.appendChild(btn);
 });
+  container.appendChild(buttonGrid);
 
 }
+
 
 function recipeScreen(countryName) {
   const data = countries[countryName];
