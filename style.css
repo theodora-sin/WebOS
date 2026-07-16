@@ -43,7 +43,7 @@ body.index{
     font-family:'Pacifico', cursive;
     text-shadow:3px 3px 8px rgba(0,0,0,0.7);
 }
-.indexintro{
+p.indexintro{
     color:#FFF8E7;
     font-size:16px;
     text-shadow:2px 2px 5px rgba(0,0,0,0.8);    
