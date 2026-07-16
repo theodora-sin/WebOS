@@ -9,6 +9,11 @@
 header{
     color:black
 }
+html,body{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+}
 
 /*style background*/
 .index{
@@ -16,6 +21,7 @@ header{
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 .portfolio{
     background:#ffeefb;
