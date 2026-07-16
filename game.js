@@ -1,7 +1,7 @@
 function startscreen() {
     const container = document.getElementById("game-container");
     container.innerHTML="";
-    background; rgb(138, 152, 255);
+    container.style.backgroundColor=" rgb(138, 152, 255)";
     const title=document.createElement("h1");
     title.innerText= "World Map Cuisine";
     const introText=document.createElement("p");
@@ -50,7 +50,7 @@ const countries = {
   Thailand:{
     flag:"🇹🇭",
     dish:"Pad Kra Pao(Stir-fried holy basil)",
-    image:"assets/thai",
+    image:"assets/thai.jpg",
     ingredients:[
         "Main: 150 g ground meat (chicken or beef or pork), 3 garlic cloved(minced), 1 to 2 thai bird's eye chilies",
         "Herb: 1 cup fresh holy basil or Thai sweet basil leaves",
@@ -153,7 +153,7 @@ const countries = {
   Italy:{
     flag:"🇮🇹",
     dish:"Spaghetti Cacio e Pepe (Cheese and Pepper Pasta)",
-    image:"assets/italy",
+    image:"assets/italy.jpg",
     ingredients:[
       "Main: 100g spaghetti or bucatini, 40g finely grated Pecorino Romano, 1tsp whole black peppercorns.",
       "Seasoning: salt for pasta water"
@@ -193,14 +193,16 @@ function countryScreen() {
   const title = document.createElement("h2");
   title.textContent = "Choose a Country";
   container.appendChild(title);
-
   Object.keys(countries).forEach(name => {
     const btn = document.createElement("button");
     btn.textContent = `${name} ${countries[name].flag}`;
     btn.className = "game-button";
     btn.onclick = () => recipeScreen(name);
+
     container.appendChild(btn);
-  });
+    container.appendChild(document.createElement("br"));
+});
+
 }
 
 function recipeScreen(countryName) {
@@ -210,12 +212,21 @@ function recipeScreen(countryName) {
 
   const title = document.createElement("h2");
   title.textContent = countryName;
+
   const dish = document.createElement("h3");
   dish.textContent = data.dish;
+
   const ingredientsTitle = document.createElement("h4");
   ingredientsTitle.textContent = "Ingredients";
-  const ingredients = document.createElement("p");
-  ingredients.textContent = data.ingredients;
+
+  const ingredients = document.createElement("ul");
+
+  data.ingredients.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      ingredients.appendChild(li);
+  });
+
   const instructionsTitle = document.createElement("h4");
   instructionsTitle.textContent = "Instructions";
 
@@ -232,7 +243,7 @@ function recipeScreen(countryName) {
   image.className = "recipe-image";
 
   const Words=document.createElement("h2");
-  title.innerText= "Enjoy your delicious meal!";
+  Words.innerText= "Enjoy your delicious meal!";
 
   const backBtn = document.createElement("button");
   backBtn.textContent = "Back";
@@ -241,10 +252,8 @@ function recipeScreen(countryName) {
   homeBtn.textContent = "Return Home";
   homeBtn.onclick = startscreen;
 
-  container.append(title, dish, ingredientsTitle, ingredients, instructionsTitle, stepsContainer, Words,image,backBtn, homeBtn);
+  container.append(title, dish,image, ingredientsTitle, ingredients, instructionsTitle, stepsContainer, Words,backBtn, homeBtn);
 }
 
 /*Screen loading*/
 document.addEventListener("DOMContentLoaded", startscreen);
-document.addEventListener("DOMContentLoaded",countryScreen);
-document.addEventListener("DOMContentLoaded,recipeScreen");
