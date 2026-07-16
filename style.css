@@ -27,6 +27,8 @@ header{
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
     background-color:#ADD8E6;
 }
+.game{ 
+    font-family: "Benton Sans", "Helvetica Neue",sans-serif,"Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji";}
 
 /*style Text*/
 main{
