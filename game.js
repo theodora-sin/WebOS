@@ -19,7 +19,7 @@ const countries = {
   Japan: {
     flag: "🇯🇵",
     dish: "Gyudon (Beef Rice Bowl)",
-    image: "assets/gyudon.jpg",
+    image: "assets/Gyudon.jpg",
     ingredients:[
         "Main:150g thinly sliced beef, ½ yellow onion (thinly sliced), 2 eggs (lightly beaten), 1 cup cooked rice", 
         "broth:60ml water,2 tbsp soy sauce, 2 tbsp mirin, 1 tsp sugar."],
