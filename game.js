@@ -1,7 +1,6 @@
 function startscreen() {
     const container = document.getElementById("game-container");
     container.innerHTML="";
-    container.style.backgroundColor=" rgb(138, 152, 255)";
     const title=document.createElement("h1");
     title.innerText= "World Map Cuisine";
     const introText=document.createElement("p");
