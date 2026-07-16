@@ -12,9 +12,9 @@ header{
 html,body{
     margin:0;
     padding:0;
+    height:100%;
     min-height:100vh;
 }
-
 /*style background*/
 .index{
     background-image:url("assets/index.png");
