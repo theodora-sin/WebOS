@@ -252,7 +252,18 @@ a:active{
     width:auto;
     min-width:140px;
 }
-
+.country-button-grid{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:15px;
+    margin:20px auto;
+    max-width:800px;
+}
+.game-button{
+    width:auto;
+    min-width:160px;
+}
 
 /* Change CSS based on screen size*/
 @media only screen and (max-width:900px){
