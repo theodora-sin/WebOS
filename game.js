@@ -266,7 +266,11 @@ function recipeScreen(countryName) {
   center.appendChild(image);
   recipeLayout.appendChild(left);
   recipeLayout.appendChild(center);
-  
+
+  const buttonContainer= document.createElement("div");
+  buttonContainer.className="button-container";
+  buttonContainer.append(backBtn,homeBtn);
+    
   container.append(title, dish,image, ingredientsTitle, ingredients, instructionsTitle, stepsContainer, Words,backBtn, homeBtn);
 }
 
