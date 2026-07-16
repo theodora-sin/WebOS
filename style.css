@@ -9,6 +9,7 @@
 header{
     color:black
 }
+
 /*style background*/
 body.index{
     min-height:100vh;
@@ -33,8 +34,15 @@ body.index{
     font-family: "Benton Sans", "Helvetica Neue",sans-serif,"Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji";
 }
 
+.intro{
+    font-size: 30px;
 
-/*style Text*/
+}
+.indexh1{
+    color:#FFF8E7;
+    font-family:'Pacifico', cursive;
+    text-shadow:3px 3px 8px rgba(0,0,0,0.7);
+}
 main{
     text-align: left;
     margin-top:0%;
@@ -92,7 +100,6 @@ p{
     min-width: 180px;
     margin: 0;
 }
-
 
 /*image*/
 .logo-link{
@@ -182,6 +189,7 @@ button{
     cursor: pointer;
     border-radius: 4px;
 }
+
 /* navigation bar*/
 nav ul{
     list-style: none;
@@ -210,6 +218,11 @@ a:hover{
 a:active{
     color:paleturquoise;
     text-decoration: underline;
+}
+index nav a{
+    background:rgba(255,255,255,0.35);
+    backdrop-filter:blur(6px);
+    padding:10px 0;    
 }
 
 /*game*/
@@ -270,19 +283,8 @@ a:active{
 }
 
 /* Change CSS based on screen size*/
-@media only screen and (max-width:900px){
-    .question{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-}
-
 @media only screen and (max-width:600px){
-    .question{
-        grid-template-columns: 1fr;
-    }
-
-    .quizimg{
-        max-width: 100%;
-        height: 160px;
+    .flex-container{
+        flex-wrap:wrap;
     }
 }
