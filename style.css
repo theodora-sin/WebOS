@@ -12,7 +12,10 @@ header{
 
 /*style background*/
 .index{
-    background:"assets/index.png" alt="AI Generated index page",class="img-two";
+    background-image:url("assets/index.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 .portfolio{
     background:#ffeefb;
