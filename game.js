@@ -252,6 +252,22 @@ function recipeScreen(countryName) {
   homeBtn.textContent = "Return Home";
   homeBtn.onclick = startscreen;
 
+  const recipeLayout = document.createElement("div");
+  recipeLayout.className= "recipe-layout";
+
+  const left = document.createElement("div");
+  left.className="recipe-left";
+
+  const center= document.createElement("div");
+  center.className="recipe-center";
+
+  left.appendChild(ingredientsTitle);
+  left.appendChild(ingredients);
+
+  center.appendChild(image);
+  recipeLayout.appendChild(left);
+  recipeLayout.appendChild(center);
+  
   container.append(title, dish,image, ingredientsTitle, ingredients, instructionsTitle, stepsContainer, Words,backBtn, homeBtn);
 }
 
