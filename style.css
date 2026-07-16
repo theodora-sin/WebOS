@@ -12,23 +12,24 @@ header{
 
 /*style background*/
 .index{
-    background: #29bde6;
-    background: linear-gradient(90deg,rgba(41, 189, 230, 1) 0%, rgba(0, 255, 212, 1) 35%, rgba(121, 226, 247, 1) 100%);
-    font-size:var(--font-size)
-
+    background:"assets/index.png" alt="AI Generated index page",class="img-two";
 }
 .portfolio{
     background:#ffeefb;
 }
 .food{
-    background-color:rgb(183, 157, 255);
+    background: #29bde6;
+    background: linear-gradient(90deg,rgba(41, 189, 230, 1) 0%, rgba(0, 255, 212, 1) 35%, rgba(121, 226, 247, 1) 100%);
+    font-size:var(--font-size)
 }
 .quiz{
     font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
     background-color:#ADD8E6;
 }
 .game{ 
-    font-family: "Benton Sans", "Helvetica Neue",sans-serif,"Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji";}
+    font-family: "Benton Sans", "Helvetica Neue",sans-serif,"Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji";
+}
+
 
 /*style Text*/
 main{
