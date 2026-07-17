@@ -249,44 +249,38 @@ a:active{
     color: #ffd166;
 }
 /*game*/
-#game-container{
-    padding:0 20px;
-    box-sizing:border-box;
-}
 .recipe-layout{
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:flex-start;
-    gap:40px;
+    gap:30px;
     margin: 20px auto;
     max-width: 1000px;
 }
 .recipe-left{
-    flex:1.5;
+    flex:1;
     text-align:left;
 }
+.recipe-left h4,
 .recipe-left ul {
+    display:block;
     list-style:disc;
-    margin: 10px 0;
+    margin: 0;
     padding-left: 20px;
 }
-.recipe-left p{
-    margin-bottom:12px;
-}
 
-.recipe-right {
+.recipe-center {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .recipe-image {
-    width: 100%;
-    max-width: 400px;
-    height:auto;
+    width: 300px;
+    max-width: 100%;
     border-radius: 5px;
     display:block;
-    object-fit:cover;
 }
 .button-container{
     display:flex;
@@ -296,13 +290,13 @@ a:active{
 }
 .button-container button{
     width:auto;
-    min-width:180px;
+    min-width:140px;
 }
 .country-button-grid{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap:15px;
     margin:20px auto;
     max-width:800px;
 }
@@ -314,6 +308,9 @@ a:active{
 /* Change CSS based on screen size*/
 @media only screen and (max-width:600px){
     .flex-container{
+        flex-wrap:wrap;
+    }
+}
         flex-wrap:wrap;
     }
 }
