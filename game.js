@@ -361,8 +361,11 @@ function recipeScreen(countryName) {
   const left = document.createElement("div");
   left.className="recipe-left";
 
-  const center= document.createElement("div");
-  center.className="recipe-center";
+  const right= document.createElement("div");
+  right.className="recipe-center";
+  right.appendChild(image);
+  recipeLayout.append(left,right);
+
 
   left.appendChild(ingredientsTitle);
   left.appendChild(ingredients);
