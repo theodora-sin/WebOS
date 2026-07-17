@@ -287,6 +287,27 @@ const countries = {
 
 };
 
+function countryScreen() {
+  const container = document.getElementById("game-container");
+  container.innerHTML = "";
+  const title = document.createElement("h2");
+  title.textContent = "Choose a Country";
+  container.appendChild(title);
+
+  const buttonGrid= document.createElement("div");
+  buttonGrid.className="country-button-grid";
+  Object.keys(countries).forEach(name => {
+    const btn = document.createElement("button");
+    btn.textContent = `${name} ${countries[name].flag}`;
+    btn.className = "game-button";
+    btn.onclick = () => recipeScreen(name);
+    buttonGrid.appendChild(btn);
+});
+  container.appendChild(buttonGrid);
+
+}
+
+
 function recipeScreen(countryName) {
   const data = countries[countryName];
   const container = document.getElementById("game-container");
@@ -302,7 +323,6 @@ function recipeScreen(countryName) {
   ingredientsTitle.textContent = "Ingredients";
 
   const ingredients = document.createElement("ul");
-
   data.ingredients.forEach(item => {
       const li = document.createElement("li");
       li.textContent = item;
@@ -340,11 +360,15 @@ function recipeScreen(countryName) {
   const left = document.createElement("div");
   left.className="recipe-left";
 
-  const center= document.createElement("div");
-  center.className="recipe-center";
+  const right= document.createElement("div");
+  right.className="recipe-right";
+  right.appendChild(image);
+  recipeLayout.append(left,right);
 
   left.appendChild(ingredientsTitle);
   left.appendChild(ingredients);
+  left.appendChild(instructionsTitle);
+  left.appendChild(stepsContainer);
 
   center.appendChild(image);
   recipeLayout.appendChild(left);
@@ -354,7 +378,7 @@ function recipeScreen(countryName) {
   buttonContainer.className="button-container";
   buttonContainer.append(backBtn,homeBtn);
 
-   container.append(title, dish,recipeLayout, ingredientsTitle,stepsContainer, Words,buttonContainer);
+   container.append(title, dish,recipeLayout, Words,buttonContainer);
 }
 
 /*Screen loading*/
