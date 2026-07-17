@@ -289,6 +289,7 @@ function recipeScreen(countryName) {
   ingredientsTitle.textContent = "Ingredients";
 
   const ingredients = document.createElement("ul");
+
   data.ingredients.forEach(item => {
       const li = document.createElement("li");
       li.textContent = item;
@@ -316,7 +317,6 @@ function recipeScreen(countryName) {
   const backBtn = document.createElement("button");
   backBtn.textContent = "Back";
   backBtn.onclick = countryScreen;
-
   const homeBtn = document.createElement("button");
   homeBtn.textContent = "Return Home";
   homeBtn.onclick = startscreen;
@@ -327,23 +327,22 @@ function recipeScreen(countryName) {
   const left = document.createElement("div");
   left.className="recipe-left";
 
-  const right= document.createElement("div");
-  right.className="recipe-right";
+  const center= document.createElement("div");
+  center.className="recipe-center";
 
-  left.appendChild(title);
-  left.appendChild(dish);
   left.appendChild(ingredientsTitle);
   left.appendChild(ingredients);
-  left.appendChild(instructionsTitle);
-  left.appendChild(stepsContainer);
 
-  right.appendChild(image);
+  center.appendChild(image);
   recipeLayout.appendChild(left);
-  recipeLayout.appendChild(right);
+  recipeLayout.appendChild(center);
 
   const buttonContainer= document.createElement("div");
   buttonContainer.className="button-container";
   buttonContainer.append(backBtn,homeBtn);
-    
-   container.append(recipeLayout, Words,buttonContainer);
+
+   container.append(title, dish,recipeLayout, ingredientsTitle,stepsContainer, Words,buttonContainer);
 }
+
+/*Screen loading*/
+document.addEventListener("DOMContentLoaded", startscreen);
