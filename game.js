@@ -182,7 +182,75 @@ const countries = {
       "Step 4: Return the beef and its accumulated juices to the skillet. Toss everything together for 30 seconds to heat the beef through and coat it in the glossy, velvety sauce. Turn off the heat.",
       "Step 5: Transfer the beef and sauce to a shallow plate. Scatter the pickled vegetables and olives over the top."
     ]
+    },
+  Taiwan:{
+    flag:"🇹🇼",
+    dish:"San Bei Ji(Taiwanese Three-Cup Chicken",
+    image:"assets/taiwan.jpg",
+    ingredients:[
+      "Main: 500g chicken thighs, 1 bulb of garlic, 1 inch piece of sliced ginger,1 big handful of fresh Thai basil",
+      "Sause: 2 tablespoons toasted sesame oil, 2 tablespoons light soy sause, 2 tablespoons Chinese cooking wine",
+    ],
+    steps:[
+      "Step 1: Heat the seasme oil in a wok over medium heat.",
+      "Step 2: Fry the ginger and garlic until golden.",
+      "Step 3: Turn the heat up to high and add the chicken, tossing for 2-3 minutes until the outside turns white.",
+      "Step 4: Pour in the soy sause, dark soy and cooking wine.",
+      "Step 5: Simmer rapidly for 5 minutes until the sauce reduced into a thick mahogany glaze",
+      "Step 6: Toss in the Thai basil, stir until wilted and serve over while rice"
+    ]
+  },
+  Brazil:{
+    flag:"🇧🇷",
+    dish: "Feijoada (Black Bean & Pork Stew",
+    image:"assets/brazil.jpg",
+    ingredients:[
+      "Main: 6 slices of diced bacon, 200g smoked sausage into sliced, 0.5 cup of diced onion and garlic, 2 cans of rinced black beans",
+      "Sause: 1 tbsp olive oil, 1 cup chicken broth, 2-3 bay leaves. 1 tsp dried oregano, plus salt and pepper to taste",
+      "Optional: pre-cooked jasmine rice for serving"
+    ],
+    steps:[
+      "Step 1: Heat the olive oil in a large pot over medium heat. Add the diced bacon and cook until crispy",
+      "Step 2: Add the sliced sausage, diced onions, and garlic. Sauté for another 3 minutes until the vegetables are soft.",
+      "Step 3: Stir in the black beans, broth, bay leaves, oregano, and a pinch of salt and pepper. Bring the mixture to a boil, then reduce the heat to low.",
+      "Step 4: Let it simmer uncovered for 15 minutes (or until the stew reaches your desired thickness).",
+      "Step 5: Remove the bay leaves and serve the rich, hearty stew piping hot over a bed of fluffy white rice."
+    ]
+  },
+  Philippines:{
+    flag:"🇵🇭",
+    dish: "Adobong Pusit (Squid Adobo)",
+    image:"assets/Philippines.jpg",
+    ingredients:[
+      "Main: 500g fresh squid, cleaned and sliced into rings, 4 minced cloves garlic, 1 small chopped onion, 1 diced medium tomato,",
+      "Sause: 3tbsp soy sauce, 2tbsp white vinegar or cane vinegar, 1tbsp cooking oil, 1 piece dried bay leaf, salt and ground black pepper to taste",
+    ],
+    steps:[
+      "Step 1: Heat oil in a pan over medium heat, saute the garlic, onion and tomato until the onions are soft and fragrant.",
+      "Step 2: Toss in the cleaned squid rings. Cookk for about 2 minutes",
+      "Step 3: Pour in the soy sause and drop in the bay leaf, let it simmer for 2 minutes",
+      "Step 4: Pour in the vinegar. Do not stir immediately, let it cook uncovered for about 3 minutes to allow the raw vinegar taste to cook off",
+      "Step 5: Stir everything together, season with black pepper and salt if needed, simmer for 1 more minute and serve hot with steamed white rice."
+    ]
+  },
+  India:{
+    flag:"🇮🇳",
+    dish:"Khichdi",
+    image:"assets/india.jpg",
+    ingredients:[
+      "Main: 0.5 cup white basmati rice, 0.5 cup split red lentils",
+      "Sause: 2.5 cups water, 1tbsp of neutral oil, 0.5 tsp cumin seeds, 0.25 tsp turmeric powder, salt to taste"
+    ],
+    steps:[
+      "Step 1: Place the rice and red lentils together in a bowl, wash thoroughly under cold water, and drain.",
+      "Step 2: Heat the oil in a pressure cooker over medium heat. Add the cumin seeds and let them sizzle for 30 seconds until fragrant.",
+      "Step 3: Add the drained rice, lentils, turmeric, and salt. Stir-fry gently for 1-2 minutes.",
+      "Step 4: Pour in the water and give it a good stir. Secure the pressure cooker lid.",
+      "Step 5: Cook on medium-high heat for 1 whistle, then reduce the heat to low and let it cook for 5 to 7 minutes.",
+      "Step 6: Turn off the heat and allow the pressure to release naturally before opening, stir well and serve hot."
+    ]
   }
+
 
 };
 
