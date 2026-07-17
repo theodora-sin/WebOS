@@ -327,8 +327,8 @@ function recipeScreen(countryName) {
   const left = document.createElement("div");
   left.className="recipe-left";
 
-  const center= document.createElement("div");
-  center.className="recipe-center";
+  const right= document.createElement("div");
+  right.className="recipe-right";
 
   left.appendChild(title);
   left.appendChild(dish);
@@ -345,8 +345,5 @@ function recipeScreen(countryName) {
   buttonContainer.className="button-container";
   buttonContainer.append(backBtn,homeBtn);
     
-   container.append(title, dish,recipeLayout, ingredientsTitle,stepsContainer, Words,buttonContainer);
+   container.append(recipeLayout, Words,buttonContainer);
 }
-
-/*Screen loading*/
-document.addEventListener("DOMContentLoaded", startscreen);
