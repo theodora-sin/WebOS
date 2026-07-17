@@ -287,27 +287,6 @@ const countries = {
 
 };
 
-function countryScreen() {
-  const container = document.getElementById("game-container");
-  container.innerHTML = "";
-  const title = document.createElement("h2");
-  title.textContent = "Choose a Country";
-  container.appendChild(title);
-
-  const buttonGrid= document.createElement("div");
-  buttonGrid.className="country-button-grid";
-  Object.keys(countries).forEach(name => {
-    const btn = document.createElement("button");
-    btn.textContent = `${name} ${countries[name].flag}`;
-    btn.className = "game-button";
-    btn.onclick = () => recipeScreen(name);
-    buttonGrid.appendChild(btn);
-});
-  container.appendChild(buttonGrid);
-
-}
-
-
 function recipeScreen(countryName) {
   const data = countries[countryName];
   const container = document.getElementById("game-container");
@@ -339,47 +318,41 @@ function recipeScreen(countryName) {
     stepsContainer.appendChild(p);
   });
 
-  const image=document.createElement("img");
+  const image = document.createElement("img");
   image.src = data.image;
-  image.alt= data.dish;
+  image.alt = data.dish;
   image.className = "recipe-image";
 
-  const Words=document.createElement("h2");
-  Words.innerText= "Enjoy your delicious meal!";
+  const Words = document.createElement("h2");
+  Words.innerText = "Enjoy your delicious meal!";
 
   const backBtn = document.createElement("button");
   backBtn.textContent = "Back";
   backBtn.onclick = countryScreen;
+  
   const homeBtn = document.createElement("button");
   homeBtn.textContent = "Return Home";
   homeBtn.onclick = startscreen;
 
   const recipeLayout = document.createElement("div");
-  recipeLayout.className= "recipe-layout";
+  recipeLayout.className = "recipe-layout";
 
   const left = document.createElement("div");
-  left.className="recipe-left";
-
-  const right= document.createElement("div");
-  right.className="recipe-right";
-  right.appendChild(image);
-  recipeLayout.append(left,right);
-
+  left.className = "recipe-left";
   left.appendChild(ingredientsTitle);
   left.appendChild(ingredients);
   left.appendChild(instructionsTitle);
   left.appendChild(stepsContainer);
 
-  center.appendChild(image);
-  recipeLayout.appendChild(left);
-  recipeLayout.appendChild(center);
 
-  const buttonContainer= document.createElement("div");
-  buttonContainer.className="button-container";
-  buttonContainer.append(backBtn,homeBtn);
+  const right = document.createElement("div");
+  right.className = "recipe-right";
+  right.appendChild(image);
 
-   container.append(title, dish,recipeLayout, Words,buttonContainer);
-}
+  recipeLayout.append(left, right);
 
-/*Screen loading*/
-document.addEventListener("DOMContentLoaded", startscreen);
+  const buttonContainer = document.createElement("div");
+  buttonContainer.className = "button-container";
+  buttonContainer.append(backBtn, homeBtn);
+
+  container.append(title, dish, recipeLayout, Words, buttonContainer);
