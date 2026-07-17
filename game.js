@@ -249,6 +249,40 @@ const countries = {
       "Step 5: Cook on medium-high heat for 1 whistle, then reduce the heat to low and let it cook for 5 to 7 minutes.",
       "Step 6: Turn off the heat and allow the pressure to release naturally before opening, stir well and serve hot."
     ]
+  },
+  Malaysia:{
+    flag:"🇲🇾",
+    dish: "laska Lemak (Curry Laksa)",
+    image: "assets/malaysia.jpg",
+    ingredients:[
+      "Main: 200g egg noddles, 200g peeled prawn,handful of bean sprouts, coriander and lime wedges,Optional(fish ball, fish cakes and tofu puffs) ",
+      "Sause: 2tbsp vegetable oil, 1.5tbsp red curry paste, 1tbsp grated giner, 1 stalk lemongrass, 400 ml chicken stock, 400ml full-fat coconut milk, 1tbsp fish sause, 1tsp sugar"
+    ],
+    steps:[
+      "Step 1: Cook the noodles according to packet instruction, drain and set aside.",
+      "Step 2: Heat the oil in a large pot over medium heat. Add the red curry paste, ginger, and lemongrass. Sauté for 1-2 minutes until the paste is fragrant and oils start to release.",
+      "Step 3: Pour in the stock, coconut milk, fish sauce, and sugar. Bring to a gentle simmer.",
+      "Step 4: Add the prawns and simmer for 3-4 minutes until cooked through.",
+      "Step 5: Divide the noodles into bowls, pour the hot, creamy laksa broth over them, and top with fresh bean sprouts, coriander, and a squeeze of lime."
+    ]
+  },
+  Canada:{
+    flag:"🇨🇦",
+    dish:"Poutine",
+    image:"assets/canada.jpg",
+    ingredients:[
+      "Main: 1 bag (600-900 g)of frozen French fries, 1 to 2 cups fresh cheese curds(white cheddar)",
+      "Sause: 1.5-2 cups brown gravy"
+    ],
+    steps:[
+      "Step 1: Preheat your oven or air fryer and cook the frozen fries according to the package insturctions until they are extra crispy.",
+      "Step 2: Heat the gravy in a small saucepan over medium heat until simmering.",
+      "Step 3: Place a generous portion of the hot, crispy fries on a plate",
+      "Step 4: Scatter the cheese curd sevenly over the hot fries ",
+      "Step 5:  Pour the hot, simmering gravy directly over the fries and cheese curds. The heat from the gravy and fries will soften the curds.",
+      "Step 6: Serveimmediately while the fries are still crispy and the cheese gets slightly gooey."
+    ]
+
   }
 
 };
