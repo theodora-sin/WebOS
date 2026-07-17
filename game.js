@@ -307,7 +307,6 @@ function countryScreen() {
 
 }
 
-
 function recipeScreen(countryName) {
   const data = countries[countryName];
   const container = document.getElementById("game-container");
@@ -323,7 +322,6 @@ function recipeScreen(countryName) {
   ingredientsTitle.textContent = "Ingredients";
 
   const ingredients = document.createElement("ul");
-
   data.ingredients.forEach(item => {
       const li = document.createElement("li");
       li.textContent = item;
@@ -362,10 +360,9 @@ function recipeScreen(countryName) {
   left.className="recipe-left";
 
   const right= document.createElement("div");
-  right.className="recipe-center";
+  right.className="recipe-right";
   right.appendChild(image);
   recipeLayout.append(left,right);
-
 
   left.appendChild(ingredientsTitle);
   left.appendChild(ingredients);
@@ -384,5 +381,4 @@ function recipeScreen(countryName) {
 }
 
 /*Screen loading*/
-document.addEventListener("DOMContentLoaded", startscreen);
 document.addEventListener("DOMContentLoaded", startscreen);
