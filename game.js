@@ -366,6 +366,8 @@ function recipeScreen(countryName) {
 
   left.appendChild(ingredientsTitle);
   left.appendChild(ingredients);
+  left.appendChild(instructionsTitle);
+  left.appendChild(stepsContainer);
 
   center.appendChild(image);
   recipeLayout.appendChild(left);
@@ -375,8 +377,9 @@ function recipeScreen(countryName) {
   buttonContainer.className="button-container";
   buttonContainer.append(backBtn,homeBtn);
 
-   container.append(title, dish,recipeLayout, ingredientsTitle,stepsContainer, Words,buttonContainer);
+   container.append(title, dish,recipeLayout, Words,buttonContainer);
 }
 
 /*Screen loading*/
+document.addEventListener("DOMContentLoaded", startscreen);
 document.addEventListener("DOMContentLoaded", startscreen);
