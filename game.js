@@ -182,7 +182,7 @@ const countries = {
       "Step 4: Return the beef and its accumulated juices to the skillet. Toss everything together for 30 seconds to heat the beef through and coat it in the glossy, velvety sauce. Turn off the heat.",
       "Step 5: Transfer the beef and sauce to a shallow plate. Scatter the pickled vegetables and olives over the top."
     ]
-    },
+  },
   Taiwan:{
     flag:"🇹🇼",
     dish:"San Bei Ji(Taiwanese Three-Cup Chicken",
@@ -251,7 +251,6 @@ const countries = {
     ]
   }
 
-
 };
 
 function countryScreen() {
@@ -290,7 +289,6 @@ function recipeScreen(countryName) {
   ingredientsTitle.textContent = "Ingredients";
 
   const ingredients = document.createElement("ul");
-
   data.ingredients.forEach(item => {
       const li = document.createElement("li");
       li.textContent = item;
@@ -318,6 +316,7 @@ function recipeScreen(countryName) {
   const backBtn = document.createElement("button");
   backBtn.textContent = "Back";
   backBtn.onclick = countryScreen;
+
   const homeBtn = document.createElement("button");
   homeBtn.textContent = "Return Home";
   homeBtn.onclick = startscreen;
@@ -331,12 +330,16 @@ function recipeScreen(countryName) {
   const center= document.createElement("div");
   center.className="recipe-center";
 
+  left.appendChild(title);
+  left.appendChild(dish);
   left.appendChild(ingredientsTitle);
   left.appendChild(ingredients);
+  left.appendChild(instructionsTitle);
+  left.appendChild(stepsContainer);
 
-  center.appendChild(image);
+  right.appendChild(image);
   recipeLayout.appendChild(left);
-  recipeLayout.appendChild(center);
+  recipeLayout.appendChild(right);
 
   const buttonContainer= document.createElement("div");
   buttonContainer.className="button-container";
