@@ -15,12 +15,12 @@ function startscreen() {
 }
 
 const moodEmoji={
-    Exhausted:"😫/😮‍💨/🫠",
-    Cozy:"🛌/☕️/🕯️",
-    Happy:"😄/😆",
-    Craving:"🤤/😋",
-    Sad:"😔,😢",
-    Angry:"😡,😠",
+    Exhausted:"😫",
+    Cozy:"🛌",
+    Happy:"😄",
+    Craving:"🤤",
+    Sad:"😔",
+    Angry:"😡",
     Surprise:"😲,"
 };
 
@@ -257,7 +257,7 @@ function choosescreen(){
     container.appendChild(title);
 
     const buttonGrid= document.createElement("div");
-    buttonGrid.className="button-grid";
+    buttonGrid.className="country-button-grid";
 
     Object.keys(moodEmoji).forEach(mood=> {
         const btn= document.createElement("button");
@@ -277,7 +277,7 @@ function eatorcookscreen(mood){
 
 
     const question= document.createElement("h3");
-    question.textContent="Feeling ${mood} ${moodEmoji[mood]}--Do you want to cook or dining outside?";
+    question.textContent="Do you want to cook or eat out?";
     container.appendChild(question);
 
     const buttonContainer= document.createElement("div");
@@ -327,6 +327,7 @@ function eatScreen(mood){
     image.src=data.image;
     image.alt= data.dish;
     image.className = "mood-image";
+    container.appendChild(image);
 
     data.describe.forEach(paragraph => {
     const p = document.createElement("p");
@@ -349,6 +350,7 @@ function cookScreen(mood){
 
     const recipeLayout=document.createElement("div");
     recipeLayout.className = "recipe-layout";
+
     const left= document.createElement("div");
     left.className = "recipe-left";
 
