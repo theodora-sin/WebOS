@@ -112,6 +112,13 @@ p{
     min-width: 180px;
     margin: 0;
 }
+.pargraph{
+    align-items:left;
+    margin: 0 auto;
+    gap:15px;
+    padding:20px;
+    max-width:1000px;
+}
 
 /*image*/
 .logo-link{
