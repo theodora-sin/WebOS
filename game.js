@@ -381,6 +381,3 @@ function recipeScreen(countryName) {
 
 /*Screen loading*/
 document.addEventListener("DOMContentLoaded", startscreen);
-    
-
-  container.append(title, dish, recipeLayout, Words, buttonContainer);
