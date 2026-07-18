@@ -1,6 +1,5 @@
 # WebOS
-This is my 3rd edition of personal website. I am trying to make my website more colorful,more engaging and more fun to play
-
+This is a website where I share my food blog, 15 minutes easy international food recipe and more
 
 Imaging/audio contribution
 -gifthub logo:https://seeklogo.com/free-vector-logos/github
@@ -27,3 +26,16 @@ baklava: https://pixabay.com/photos/food-eastern-sweets-baklava-sweet-5158702/
 Banh xeo:https://pixabay.com/photos/b%C3%A1nh-x%C3%A8o-food-dish-meal-cuisine-5602960/
 Budae jjigae: https://pixabay.com/photos/budae-jjigae-noodles-soup-kimchi-10220558/
 bubble tea(favicon)https://pixabay.com/photos/drink-cup-food-cup-containers-tea-3545791/
+taiwan: https://uk.pinterest.com/pin/159174168049830464/
+Brazil: https://www.pinterest.com/pin/978970037773776645/
+Philliphines:blob:https://www.pinterest.com/3ddbc832-835b-4a35-b67d-5680c9213806
+india:https://www.pinterest.com/pin/94083079710673655/
+instanramen:https://www.pinterest.com/pin/40884309114594028/
+udon:https://www.pinterest.com/16fc1579-35e6-41d5-a327-c7cd8d735e90
+kimichi:https://www.pinterest.com/pin/454582156153020198/
+soup:https://www.pinterest.com/pin/27795722696491423/
+crepes:https://www.pinterest.com/pin/2462974791786464/
+oden: https://www.pinterest.com/pin/4785143351286499/
+guacamole salsa: https://www.pinterest.com/pin/126663808269277886/
+Spicy Buffalo Wings:https://www.pinterest.com/pin/92886811061665657/
+lavacake:https://www.pinterest.com/pin/55098795472124459/
