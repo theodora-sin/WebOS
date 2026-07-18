@@ -333,6 +333,12 @@ a:active{
     display:block;
     object-fit:cover;
 }
+.mood-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;    
+}
+
 /* Change CSS based on screen size*/
 @media only screen and (max-width:768px){
     .flex-container{
