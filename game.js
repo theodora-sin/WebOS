@@ -287,6 +287,27 @@ const countries = {
 
 };
 
+function countryScreen() {
+  const container = document.getElementById("game-container");
+  container.innerHTML = "";
+  const title = document.createElement("h2");
+  title.textContent = "Choose a Country";
+  container.appendChild(title);
+
+  const buttonGrid= document.createElement("div");
+  buttonGrid.className="country-button-grid";
+  Object.keys(countries).forEach(name => {
+    const btn = document.createElement("button");
+    btn.textContent = `${name} ${countries[name].flag}`;
+    btn.className = "game-button";
+    btn.onclick = () => recipeScreen(name);
+    buttonGrid.appendChild(btn);
+});
+  container.appendChild(buttonGrid);
+
+}
+
+
 function recipeScreen(countryName) {
   const data = countries[countryName];
   const container = document.getElementById("game-container");
@@ -354,5 +375,12 @@ function recipeScreen(countryName) {
   const buttonContainer = document.createElement("div");
   buttonContainer.className = "button-container";
   buttonContainer.append(backBtn, homeBtn);
+
+  container.append(title, dish, recipeLayout, Words, buttonContainer);
+}
+
+/*Screen loading*/
+document.addEventListener("DOMContentLoaded", startscreen);
+    
 
   container.append(title, dish, recipeLayout, Words, buttonContainer);
