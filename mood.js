@@ -48,7 +48,7 @@ const mood_cook ={
     Cozy:{
         dish:"Grilled Cheese sandwich with Tomato Soup",
         image:"assets/soup.jpg",
-        descibe:"When the world outside gets a little too loud, or the weather turns chilly, there is nothing better than retreating to the kitchen to cook something that feels like a giant hug. This is the place for slow-down, comfort-first recipes that fill your home with incredible aromas and your soul with pure warmth.",
+        describe:"When the world outside gets a little too loud, or the weather turns chilly, there is nothing better than retreating to the kitchen to cook something that feels like a giant hug. This is the place for slow-down, comfort-first recipes that fill your home with incredible aromas and your soul with pure warmth.",
         ingredients:[
             "Tomato soup: 375g tomatoes (use ripe,seasonal tomatoes), 1tsp balsamic vinegar, 1 tsp olive oil, 0.5 tsp sugar, 0.25 tsp salt, 0.25 finely chopped red onion, 0.5 finely chopped garlic clove, a small handful of fresh basil leaves, 0.25 tsp tomato paste, 1 cups of vegetable broth, 1tbsp cream, salt and black pepper to taste",
             "Grilled Cheese sandwich: 2 slices of sourdough, 0.25 cups grated mozzarella, 2 cups grated mature cheddar,butter"
@@ -67,7 +67,7 @@ const mood_cook ={
     Happy:{
         dish:"Chocolate Burnt Basque Cheesecake",
         image:"assests/cheesecake.jpg",
-        descibe:"Burnt Basque Cheesecake is famous for its deliberately scorched, beautifully browned top and creamy interior. Infusing it with rich chocolate turns it into a luxurious centrepiece that feels like a true culinary celebration.",
+        describe:"Burnt Basque Cheesecake is famous for its deliberately scorched, beautifully browned top and creamy interior. Infusing it with rich chocolate turns it into a luxurious centrepiece that feels like a true culinary celebration.",
         ingredients:[
             "Main ingredients: 160g dark chocolate, 233g double cream, 413g cream cheese, 84g caster sugar, 4.5g cocoa powder, 8g plain flour, 1.3g fine sea salt, 3 large eggs wishked (around 156g)",
             "Equipment: 6-inch springform tin"
@@ -187,7 +187,7 @@ const mood_eat={
         ]
     },
     Cozy: {
-        Dish: "Kimchi-jjigae",
+        dish: "Kimchi-jjigae",
         image:"assests/kimichi.jpg",
         describe:[
             "There is nothing quite like a traditional clay pot arriving at your table, still furiously bubbling and releasing a cloud of steam that instantly warms your face. The secret to this comfort masterpiece is the fermented kimchi, which creates a complex, deeply savory broth that is perfectly tangy and bold, and has just the right amount of spicy kick to wake up your senses.",
@@ -196,7 +196,7 @@ const mood_eat={
         ]
     },
     Happy:{
-        Dish:"Mango Sticky Rice",
+        dish:"Mango Sticky Rice",
         image:"assets/stickyrice.jpg",
         describe:[
             "When you'are already in a great mood, the best choice is to treat yourself.",
@@ -206,25 +206,25 @@ const mood_eat={
         ]
     },
     Craving:{
-        Dish:"Oden",
+        dish:"Oden",
         image:"assets/oden.jpg",
-        descibe:[
+        describe:[
             "When you're craving something warm, savory, and comforting, a bowl of oden is hard to beat.",
             "Oden is all about warm,comfort. Everything is slowly simmered in a light but flavorful dashi broth, so each ingredient absorbs the rich, savory taste. Every bite is full of different textures, making the dish feel satisfying from start to finish.",
             "Treat yourself to a bowl from a Japanese restaurant or a convenience store if you're in East Asia. It's simple, satisfying, and perfect when you want something that really hits the spot."
         ]
     },
     Sad:{
-        Dish:"Ice-cream sandwich",
+        dish:"Ice-cream sandwich",
         image:"assets/icecreamsandwich.jpg",
-        descibe:[
+        describe:[
             "When you're feeling low, you just want something easy, comforting and familiar. That's where an ice-cream sandwich comes in—it’s the kind of treat you can grab straight from the freezer and enjoy right away.",
             "The best part is the soft cookies on the outside which is soft and gooey, while the cold creamy vanilla ice cream in the middle creates the perfect contrast. It’s sweet, simple, and satisfying without making a mess or needing any extra effort.",
             "It brings back memories of carefree summer days. It’s a little treat that feels comforting in the simplest way."
         ]
     },
     Angry:{
-        Dish:"Spicy Buffalo Wings",
+        dish:"Spicy Buffalo Wings",
         image:"assets/buffalo.jpg",
         describe:[
             "When you’re really angry, sometimes you need a meal that matches that energy. Instead of sitting around feeling frustrated, go out and treat yourself to something bold and satisfying—like a basket of crispy wings or hot fried chicken from your favorite spot.",
@@ -233,7 +233,7 @@ const mood_eat={
         ]
     },
     Surprise:{
-        Dish: "Omakase",
+        dish: "Omakase",
         image:"assests/omakase.jpg",
         describe:[
             "When you're craving a little surprise but you don't want to do the planning yourself, let someone else take the lead.",
@@ -285,18 +285,18 @@ function eatorcookscreen(mood){
 
     const eatBtn = document.createElement("button");
     eatBtn.textContent="Eat Out";
-    eatBtn.onclick=eatScreen;
+    eatBtn.onclick = () => eatScreen(selectedMood);
 
     const cookBtn = document.createElement("button");
     cookBtn.textContent="Cook";
-    cookBtn.onclick=cookScreen;
+    cookBtn.onclick = () => cookScreen(selectedMood);
     
     buttonContainer.append(eatBtn,cookBtn);
     container.appendChild(buttonContainer);
 }
 
 function backButtons(container){
-    const buttonContainer=document.createElement("div'");
+    const buttonContainer=document.createElement("div");
     buttonContainer.className="button=container";
 
     const backBtn=document.createElement("button");
@@ -340,7 +340,7 @@ function eatScreen(mood){
 
 
 function cookScreen(mood){
-    const data = mood_eat[mood];
+    const data = mood_cook[mood];
     const container= document.getElementById("mood-container");
     container.innerHTML ="";
 
