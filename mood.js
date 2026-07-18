@@ -400,4 +400,4 @@ function cookScreen(mood){
 }
 
 /*Screen loading*/
-document.addEventListener("DoMContentLoaded",startscreen);
+document.addEventListener("DOMContentLoaded",startscreen);
