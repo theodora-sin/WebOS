@@ -284,6 +284,25 @@ a:active{
     color: #ffd166;
 }
 
+/*personality quiz*/
+#progress-container{
+    width:100%;
+    background-color:#d4c7c7;
+    border-radius: 20px;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+#progress-bar{
+    width:0%;
+    height:25 px;
+    background-color:#4CAF50;
+    transition:width 0.3s ease;
+}
+#progress-text{
+    text-align:center;
+    margin-top:8px;
+}
+
 /*game*//*mood*/
 #game-container{
     max-width:1100px;
