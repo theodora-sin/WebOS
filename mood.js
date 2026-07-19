@@ -352,11 +352,15 @@ function eatScreen(mood){
     image.className = "mood-image";
     right.appendChild(image);
 
-  container.appendChild(left);
-  container.appendChild(right);
+  const row=document.createElement("div");
+  row.className-"recipe-row";
+  row.appendChild(left);
+  row.appendChild(right);
+  container.appendChild(row);
   backButtons(container);
 
 }
+
 
 function cookScreen(mood){
     const data = mood_cook[mood];
@@ -368,7 +372,7 @@ function cookScreen(mood){
     container.appendChild(title);
 
     const recipeLayout=document.createElement("div");
-    recipeLayout.className = "recipe-layout";
+    recipeLayout.className = "recipe-row";
 
     const left= document.createElement("div");
     left.className = "recipe-left";
