@@ -4,6 +4,7 @@
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --margin:18px;
     --font-size: 24px;
+    --transition-fast:0.2s ease;
 }
 
 body{
@@ -13,6 +14,14 @@ body{
 }
 header{
     color:black
+}
+
+@media (prefers-reduced-motion: reduce){
+    *, *::before, *::after{
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }
 
 /*style background*/
@@ -66,6 +75,7 @@ main{
     margin-bottom:0%;
     margin-left:15%;
     margin-right:15%;
+    animation:fadeIn 0.6s ease both;
 }
 h1{
     color:navy;
@@ -106,6 +116,7 @@ p{
     justify-content: center;
     gap: 18px;
     align-items: flex-start;
+    animation:fadeIn 0.45s ease both;
 }
 .answer-choice {
     display: flex;
@@ -117,7 +128,20 @@ p{
     max-width: 220px;
     min-width: 180px;
     margin: 0;
+    border-radius:6px;
+    padding:6px;
+    cursor:pointer;
+    transition: border-color var(--transition-fast), transform var(--transition-fast), background-color var(--transition-fast);
 }
+.answer-choice:hover{
+    transform:translateY(-2px);
+    background-color: rgba(0,0,0,0.04);
+}
+.answer-choice.selected{
+    border-color:navy;
+    background-color:rgba(0,0,128,0.06);
+}
+
 .pargraph{
     align-items:left;
     margin: 0 auto;
@@ -156,12 +180,14 @@ p{
     padding:10px;
     align-items:center;
     justify-content:center;
+    object-fit:cover;
 }
+
 .quizimg{
     width: 100%;
     max-width: 180px;
     height: 140px;
-    object-fit: contain;
+    object-fit: cover;
     background-color: #f7f7f7;
     margin: 0 0 10px;
     padding: 3px;
@@ -169,7 +195,7 @@ p{
     display: block;
 }
 /*button*/
-button{
+.btn,button,#displayedResult,#restart{
     background-color: navy;
     min-width: 140px;
     min-height: 48px;
@@ -187,36 +213,28 @@ button{
     white-space: normal;
     line-height: 1.2;
     font-family:"Twemoji Country Flags", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+    transition: background-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
-#displayResult {
-    background-color: navy;
+#displayResult, #restart{
     min-width: 250px;
-    min-height: 48px;
+    max-width:none;
+    width:auto;
     color: white;
-    border: 5px solid rgb(0, 0, 8);
-    padding: 10px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
     margin: var(--margin);
-    cursor: pointer;
-    border-radius: 4px;
 }
 
-#restart {
-    background-color: navy;
-    min-width: 250px;
-    min-height: 48px;
-    color: white;
-    border: 5px solid rgb(0, 0, 8);
-    padding: 10px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: var(--margin);
-    cursor: pointer;
-    border-radius: 4px;
+.btn:hover,button:hover,#displayResult:hover,#restart:hover{
+    background-color:#10106b;
+    transform:scale(1.03);
 }
+.btn:active,button:active,#displayResult:active,#restart:active{
+    transform:scale(0.98);
+}
+.btn:focus-visible,button:focus-visible,#displayResult:focus-visible,#restart:focus-visible, a:focus-visible{
+    outline: 3px solid hotpink;
+    outline-offset: 2px;
+}
+
 .game-button{
     width:auto;
     min-width:160px;
@@ -237,11 +255,12 @@ nav ul{
 /*unvisited link*/
 a:link{
     color:rgb(0, 0, 0);
+    transition:color var(--transition-fast);
 }
 /* visited link */
 a.visited{
     color:blanchedalmond;
-}
+};
 /* mouse over link */
 a:hover{
     color:hotpink;
@@ -296,6 +315,7 @@ a:active{
     align-items:flex-start;
     gap:50px;
     margin: 30px auto;
+    animation:fadeIn 0.5 ease both;
 }
 
 
@@ -358,7 +378,17 @@ a:active{
     justify-content: center;    
 }
 
-
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        transform: translateY(20px) scale(0.85);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
 
 /* Change CSS based on screen size*/
 @media only screen and (max-width:768px){
@@ -371,5 +401,9 @@ a:active{
     }
     .recipe-left{
         max-width:100%;
+    }
+    main{
+        margin-left:6%;
+        margin-right:6%;
     }
 }
