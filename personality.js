@@ -134,7 +134,7 @@ function updateresult(){
     <img src="assets/phall.jpg" alt="Phall curry" class="quizimg">`;
     console.log("You are a Spice Adventure Seeker!");
   }
-  else if (ComfortCozyDinerscore >= 2) {
+  else if (ComfortCozyDinerscore >= 3) {
     result.innerHTML =`
     <h3>You are a Comfort Cozy Diner!</h3>
     <p>Recommend dish:Budae-jiigae"</p>
