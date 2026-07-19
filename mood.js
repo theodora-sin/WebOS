@@ -338,6 +338,11 @@ function eatScreen(mood){
     title.textContent=data.dish;
     left.appendChild(title);
 
+    data.describe.forEach(paragraph => {
+    const p = document.createElement("p");
+    p.textContent = paragraph;
+    left.appendChild(p);
+  });
     const right = document.createElement("div");
     right.className="mood-right";
 
@@ -347,11 +352,8 @@ function eatScreen(mood){
     image.className = "mood-image";
     right.appendChild(image);
 
-    data.describe.forEach(paragraph => {
-    const p = document.createElement("p");
-    p.textContent = paragraph;
-    left.appendChild(p);
-  });
+  container.appendChild(left);
+  contaner.appendChild(right);
   backButtons(container);
 
 }
