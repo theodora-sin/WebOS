@@ -40,6 +40,9 @@ var q5a2=document.getElementById("q5a2");
 var q5a3=document.getElementById("q5a3");
 var q5a4=document.getElementById("q5a4");
 
+//store progress bar:
+var progressBar=document.getElementById("progress-bar");
+var progressText= document.getElementById("progress-text");
 
 //Listen for click on answer button and call function if clicked
 button.addEventListener("click",updateresult);
@@ -69,10 +72,19 @@ q5a2.addEventListener("click",function (){ComfortCozyDiner();disableQuestion(5)}
 q5a3.addEventListener("click",function (){FreshCrispEnthusiast();disableQuestion(5)});
 q5a4.addEventListener("click",function (){SweetandDecadent();disableQuestion(5)});
 
+//Progree Bar
+function updateProgressBar(){
+    let percentage = (questionCount/5)*100;
+    progressBar.style.width= percentage+"%";
+    progressText.innerHTML= questionCount + "/ 5 Questions Answered"
+}
+
+
 //Track score:
 function SpiceAdventureSeeker(){
   SpiceAdventureSeekerscore +=1;
   questionCount +=1;
+  updatedProgressBar()
   console.log("questionCount=" + questionCount+ "SpiceAdventureSeekerscore=" +SpiceAdventureSeekerscore);
   if(questionCount==5){
     console.log("The quiz has done")
@@ -83,6 +95,7 @@ function SpiceAdventureSeeker(){
 function ComfortCozyDiner(){
   ComfortCozyDinerscore +=1;
   questionCount +=1;
+  updatedProgressBar()
   console.log("questionCount=" + questionCount+ "ComfortCozyDinerscore=" +ComfortCozyDinerscore);
   if(questionCount==5){
     console.log("The quiz has done")
@@ -93,6 +106,7 @@ function ComfortCozyDiner(){
 function FreshCrispEnthusiast(){
   FreshCrispEnthusiastscore +=1;
   questionCount +=1;
+  updatedProgressBar()
   console.log("questionCount=" + questionCount+ "FreshCrispEnthusiastscore=" +FreshCrispEnthusiastscore);
   if(questionCount==5){
     console.log("The quiz has done")
@@ -103,6 +117,7 @@ function FreshCrispEnthusiast(){
 function SweetandDecadent(){
   SweetandDecadentscore +=1;
   questionCount +=1;
+  updatedProgressBar()
   console.log("questionCount=" + questionCount+ "SweetandDecadentscore=" +SweetandDecadentscore);
   if(questionCount==5){
     console.log("The quiz has done")
@@ -119,7 +134,7 @@ function updateresult(){
     <img src="assets/phall.jpg" alt="Phall curry" class="quizimg">`;
     console.log("You are a Spice Adventure Seeker!");
   }
-  else if (ComfortCozyDinerscore >= 3) {
+  else if (ComfortCozyDinerscore >= 2) {
     result.innerHTML =`
     <h3>You are a Comfort Cozy Diner!</h3>
     <p>Recommend dish:Budae-jiigae"</p>
@@ -127,7 +142,7 @@ function updateresult(){
     <img src="assets/Budae-jiigae.jpg" alt="budae jiigae"class="quizimg">`;
     console.log("You are a Comfort Cozy Diner!");
   }
-  else if (FreshCrispEnthusiastscore >= 3) {
+  else if (FreshCrispEnthusiastscore >= 2) {
     result.innerHTML = `
     <h3>You are a Fresh Crisp Enthusiast!</h3>
     <p>Recommend dish:Bánh Xèo</p>
@@ -157,6 +172,7 @@ function restartQuiz(){
   SweetandDecadentscore = 0;
   questionCount = 0;
   result.innerHTML = "You are a...";
+  updateProgressBar();
   console.log("Quiz restarted.");
   enableBtn();
 }
