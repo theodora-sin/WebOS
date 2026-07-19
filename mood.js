@@ -15,13 +15,13 @@ function startscreen() {
 }
 
 const moodEmoji={
-    Exhausted:"😫",
-    Cozy:"🛌",
-    Happy:"😄",
-    Craving:"🤤",
-    Sad:"😔",
-    Angry:"😡",
-    Surprise:"😲,"
+    Exhausted:"😫"
+    Cozy:"🛌"
+    Happy:"😄"
+    Craving:"🤤"
+    Sad:"😔"
+    Angry:"😡"
+    Surprise:"😲"
 };
 
 
@@ -29,12 +29,14 @@ const mood_cook ={
     Exhausted:{
         dish:"Carbonara Buldak Ramen ",
         image:"assets/buldak.jpg",
-        describe:"When your brain is fried and you have zero energy, this is the ultimate hack. It takes instant ramen and turns it into a creamy, comforting masterpiece with almost zero extra effort.",
+        describe:[
+            "When your brain is fried and you have zero energy, this is the ultimate hack. It takes instant ramen and turns it into a creamy, comforting masterpiece with almost zero extra effort."
+        ],
         ingredients:[
             "Main ingredients: 1 package Samyange Buldak Carbonara Hot Chikcken Ramen, 1 large egg yolk, 1 tbsp mayonnaise, 0.25 to 0.5 cup heavy cream or whole cream, 1 slice of cheddar cheese, a handful of shredded mozzarella",
             "Optional: Cooked bacon bits, sliced mushroom,chopped green onions, kimichi(side dish)"
         ],
-        Steps:[
+        steps:[
             "Step 1: Cook the ramen noodlesin 600 ml of boiling water for 3-4 minutes.",
             "Step 2: Before drain, scoop out about 4 tbsp of noodle water and set it aside, drain the rest of water.",
             "Step 3: In a seperate bowl, whisk together the egg yolk, mayonnaise, the entire cheese powder packet from the ramer and your cream or milk.",
@@ -43,17 +45,19 @@ const mood_cook ={
             "Step 6: Toss and stir continuously for 1-2 minutes. Add a splash of the reserved starchy water if the sauce feels too thick. Drop your cheese in and let it melt into the sauce until glossy and creamy.",
             "Step 7: Plate immediately and top with your optional ingredient, Bon appetit! "
         ],
-        explantion:"This recipe is the definition of low-effort, high reward. It requires only one pot and gives you that rich, spicy, creamy comfort your brain is screaming for when you're too tired to function."
+        explanation:["This recipe is the definition of low-effort, high reward. It requires only one pot and gives you that rich, spicy, creamy comfort your brain is screaming for when you're too tired to function."]
     },
     Cozy:{
         dish:"Grilled Cheese sandwich with Tomato Soup",
         image:"assets/soup.jpg",
-        describe:"When the world outside gets a little too loud, or the weather turns chilly, there is nothing better than retreating to the kitchen to cook something that feels like a giant hug. This is the place for slow-down, comfort-first recipes that fill your home with incredible aromas and your soul with pure warmth.",
+        describe:[
+            "When the world outside gets a little too loud, or the weather turns chilly, there is nothing better than retreating to the kitchen to cook something that feels like a giant hug. This is the place for slow-down, comfort-first recipes that fill your home with incredible aromas and your soul with pure warmth."
+        ],
         ingredients:[
             "Tomato soup: 375g tomatoes (use ripe,seasonal tomatoes), 1tsp balsamic vinegar, 1 tsp olive oil, 0.5 tsp sugar, 0.25 tsp salt, 0.25 finely chopped red onion, 0.5 finely chopped garlic clove, a small handful of fresh basil leaves, 0.25 tsp tomato paste, 1 cups of vegetable broth, 1tbsp cream, salt and black pepper to taste",
             "Grilled Cheese sandwich: 2 slices of sourdough, 0.25 cups grated mozzarella, 2 cups grated mature cheddar,butter"
         ],
-        Steps:[
+        steps:[
             "Step 1: Toss the tomato with olive oil, balsamic vinegar, sugar and salt, then roast them in the oven at 200°C for around 15-20 minutes until soft and slightly charred.",
             "Step 2: Placed your chopped onion and garlic into a small saucepan over medium heat until soft. Stir in the tomato paste and let it cook for 1 minute",
             "Step 3: Add tomatoes, broth and fresh basil leaves into saucepan, bring to a gentle boil, turn the heat down and simmer for 10 minutes.",
@@ -62,17 +66,19 @@ const mood_cook ={
             "Step 6: Cook in a non-stick pan over medium heat until the cheese is melted and the sandwiches are gloden brown on both side.",
             "Step 7: Serve the homemade tomato soup with a drizzle of cream and fresh basil leaves with the grilled cheese sandwiches."
         ],
-        explanation:"This meal demands simplicity, nostalgia, and food that feels like a safety blanket.When your knife cuts through the sandwich, creating satisfying crunch that promises pure comfort. The rich cheddar and mozzarella melt into a gooey buttery. When you dip it into the soup,the velvety, slightly tangy warmth of the tomato soup creates the perfect combo.Every single bite is warm and satisfy. This make you want to slow down,and enjoy your meal."
+        explanation:[
+            "This meal demands simplicity, nostalgia, and food that feels like a safety blanket.When your knife cuts through the sandwich, creating satisfying crunch that promises pure comfort. The rich cheddar and mozzarella melt into a gooey buttery. When you dip it into the soup,the velvety, slightly tangy warmth of the tomato soup creates the perfect combo.Every single bite is warm and satisfy. This make you want to slow down,and enjoy your meal."]
     },
     Happy:{
         dish:"Chocolate Burnt Basque Cheesecake",
-        image:"assests/cheesecake.jpg",
-        describe:"Burnt Basque Cheesecake is famous for its deliberately scorched, beautifully browned top and creamy interior. Infusing it with rich chocolate turns it into a luxurious centrepiece that feels like a true culinary celebration.",
+        image:"assets/cheesecake.jpg",
+        describe:["Burnt Basque Cheesecake is famous for its deliberately scorched, beautifully browned top and creamy interior. Infusing it with rich chocolate turns it into a luxurious centrepiece that feels like a true culinary celebration."
+        ],
         ingredients:[
             "Main ingredients: 160g dark chocolate, 233g double cream, 413g cream cheese, 84g caster sugar, 4.5g cocoa powder, 8g plain flour, 1.3g fine sea salt, 3 large eggs wishked (around 156g)",
             "Equipment: 6-inch springform tin"
         ],
-        Steps:[
+        steps:[
             "Step 1: Preheat oven to 220°C fan. Line a 6-inch springform pan with parchment on the base and sides. Let the cream cheese come to room temeperature.",
             "Step 2: Melt the chopped chocolate and cream together over gently simmering water. Stir until smooth and cool to 30–35°C.",
             "Step 3: Beat the cream cheese with sugar, cocoa powder, flour and salt on low speed until smooth.",
@@ -90,12 +96,14 @@ const mood_cook ={
     Craving:{
         dish:"Nutella Crepe:",
         image:"assets/crepe.jpg",
-        describe:"When you're suddenlt craving something sweet, you usually don't want to wait long. Nutella crepes come together in just a few minutes and feel like a special treat, even though they're made with simple ingredients.",
-        ingreidents:[
+        describe:[
+            "When you're suddenlt craving something sweet, you usually don't want to wait long. Nutella crepes come together in just a few minutes and feel like a special treat, even though they're made with simple ingredients."
+        ],
+        ingredients:[
             "Main ingredients: 0.5 cup of milk, 1 large egg, 3tbsp of Nutella, 0.25 cup of all-purpose flour",
             "Topping/Filling(Optional): Nutella, strawberries, bananas, whipped cream, powdered sugar and many more"
         ],
-        Steps:[
+        steps:[
             "Step 1: Whisk together milk, egg, and Nutella until smooth. Add the flour and whisk until no lumps remain.",
             "Step 2: Heat a lightly greased non-stick pan over medium heat.",
             "Step 3: pour 0.25 cup of batter into the pan. Tilt the pan to spread the batter into thin, even layer.",
@@ -115,11 +123,11 @@ const mood_cook ={
             "When you're feeling a little down, spending some time in the kitchen can be surprisingly comforting. Something is calming about stirring a pot, watching the cheese melt, and making a meal from scratch without having to rush.",
             "A one-pot macaroni and cheese is simple to make, fills the kitchen with a warm, comforting aroma, and gives you a bowl of creamy comfort at the end."
         ],
-        Ingredients:[
+        ingredients:[
             "Main ingredients: 113g macaroni, 28g butter, 16g all-purpose flour,240 ml milk, 60g shredded cheddar cheese, 60g shredded mozzarella",
             "Seasoning: 1.5 gram of salt, ground black pepper to taste"
         ],
-        Steps:[
+        steps:[
             "Step 1: Boiling a large pot of lightly salted water, cook macaroni in the boiling water, follow the instruction of the package.",
             "Step 2: At the same time, melt the butter in a sausepan over medium heat.",
             "Step 3: Whisk in flour, salt and black pepper until smooth about 5 minutes.",
@@ -135,12 +143,14 @@ const mood_cook ={
     Angry:{
         dish:"Guacamole Salsa ",
         image:"assets/guacamole.jpg",
-        describe:"When you’re feeling angry, frustrated, or just need a way to let off some steam, cooking can be a great way to reset. Instead of reaching for takeout, try making a fresh batch of guacamole salsa. It’s simple, hands-on, and gives you a chance to chop, mix, and create something full of bold flavors.",
-        Ingredients:[
+        describe:[
+            "When you’re feeling angry, frustrated, or just need a way to let off some steam, cooking can be a great way to reset. Instead of reaching for takeout, try making a fresh batch of guacamole salsa. It’s simple, hands-on, and gives you a chance to chop, mix, and create something full of bold flavors."
+        ],
+        ingredients:[
             "Main ingredients: 0.25 white onion, 2 crushed garlic cloves, 2 large avocados, 1-2 chopped jalapeno chillies(optional)",
             "Seasoning: 1tbsp white wine vinegar, small pack coriander, 1 lime juiced, 2-3 tbsp olive oil"
         ],
-        Steps:[
+        steps:[
             "Step 1: Mix the chopped onion and vinegar in a bowl. Let it sit for 15 minutes to soften the onion.",
             "Step 2: Add the garlic, jalapeños (if using), coriander, and a little seasoning. ",
             "Step 3: Add the avocado and mash gently with a fork until combined, leaving some chunks for texture.",
@@ -156,19 +166,21 @@ const mood_cook ={
     Surprise:{
         dish:"Chocolate Lava Cake",
         image:"assets/lavacake.jpg",
-        describe:"When you’re in the mood for something unexpected, a dessert with a little surprise inside is always more fun. A lava cake looks like a simple chocolate cake from the outside, but the moment you cut into it, a warm, gooey chocolate centre flows out, make it satisfying to make and enjoy.",
-        Ingredients:[
+        describe:[
+            "When you’re in the mood for something unexpected, a dessert with a little surprise inside is always more fun. A lava cake looks like a simple chocolate cake from the outside, but the moment you cut into it, a warm, gooey chocolate centre flows out, make it satisfying to make and enjoy."
+        ],
+        ingredients:[
             "Main ingredients: 0.5 cup unsalted butter, 168g bittersweet chocolate chopped, 2 large eggs, 2 large egg yolks, 50g of granulated sugar, 1/8 tsp salt, 2tbsp all-purposed flour",
             "optional: Ice cream, berries,chocolate sause"
         ],
-        Steps:[
+        steps:[
             "Step 1: Preheat the oven 230°C. Grease and lightly flour 6 small ramekins, place them on a baking tray.",
             "Step 2: Melt the butter and chocolate together over low heat, stir until smooth,then set aside.",
             "Step 3: Whisk the eggs, egg yolks,sugar, and salt until the mixture become thick and pale.Gently fold in the melted chocolate mixture and flour until combined.",
             "Step 4: Divide the batter between ramekins. Bake for 6–8 minutes until the edges are firm but the centre is still soft and slightly jiggly.",
             "Step 5: Let the cakes rest for 1 minute. Place a plate over each ramekin, carefully flip it over, and remove the ramekin. Dust with powdered sugar and serve immediately with berries or ice cream if you like."
         ],
-        Explanation:[
+        explanation:[
             "The best part of a lavacake is the moment you cut into it. From the outside, it looks like an ordinary chocolate cake, but inside there's a warm, gooey chocolate center waiting to spill out.The contrast between the soft cake and the rich melted chocolate makes every bite feel special.",
             "It’s the kind of dessert that feels a little magical without being complicated. The short baking time creates that perfect balance between a delicate cake exterior and a flowing chocolate middle, turning a simple treat into a fun and memorable experience."
         ]
@@ -188,7 +200,7 @@ const mood_eat={
     },
     Cozy: {
         dish: "Kimchi-jjigae",
-        image:"assests/kimichi.jpg",
+        image:"assets/kimichi.jpg",
         describe:[
             "There is nothing quite like a traditional clay pot arriving at your table, still furiously bubbling and releasing a cloud of steam that instantly warms your face. The secret to this comfort masterpiece is the fermented kimchi, which creates a complex, deeply savory broth that is perfectly tangy and bold, and has just the right amount of spicy kick to wake up your senses.",
             "This stew doesn't just fill your stomach—it completely revives you. The heat clears your head, the bold flavors satisfy your deepest cravings, and the sheer warmth makes you feel grounded and taken care of.",
@@ -234,7 +246,7 @@ const mood_eat={
     },
     Surprise:{
         dish: "Omakase",
-        image:"assests/omakase.jpg",
+        image:"assets/omakase.jpg",
         describe:[
             "When you're craving a little surprise but you don't want to do the planning yourself, let someone else take the lead.",
             "The fun of ordering something you didn’t choose yourself is the feeling of discovery. Instead of picking the same familiar dishes, you get to experience new flavors and combinations that you might not have tried before.",
@@ -297,13 +309,13 @@ function eatorcookscreen(mood){
 
 function backButtons(container){
     const buttonContainer=document.createElement("div");
-    buttonContainer.className="button=container";
+    buttonContainer.className="button-container";
 
     const backBtn=document.createElement("button");
     backBtn.textContent="Back";
     backBtn.onclick=choosescreen
 
-    const homeBtn=document.createElement("div");
+    const homeBtn=document.createElement("button");
     homeBtn.textContent="Return Home";
     homeBtn.onclick=startscreen;
 
@@ -357,7 +369,7 @@ function cookScreen(mood){
     data.describe.forEach(paragraph => {
     const p = document.createElement("p");
     p.textContent = paragraph;
-    container.appendChild(p);
+    left.appendChild(p);
   });
   
     const ingredientsTitle = document.createElement("h4");
@@ -376,12 +388,14 @@ function cookScreen(mood){
     instructionsTitle.textContent = "Instructions";
     left.appendChild(instructionsTitle);
 
+    const stepsContainer= document.createElement("div");
     data.steps.forEach(step => {
         const p = document.createElement("p");
         p.textContent = step;
         stepsContainer.appendChild(p);
     });
-   
+   left.appendChild(stepsContainer);
+
     const right = document.createElement("div");
     right.className="mood-right";
     const image=document.createElement("img");
@@ -391,15 +405,28 @@ function cookScreen(mood){
     right.appendChild(image);
 
     recipeLayout.append(left,right);
-    container,appendChild(recipeLayout);
+    container.appendChild(recipeLayout);
 
-    const explanation=document.createElement("p");
-    explanation.textContent= data.explanation;
-    container.appendChild(explanation);
+    if (Array.isArray(data.explanation)){
+        data.explanation.forEach(text => {
+            const p= document.createElement("p");
+            p.textContent=text;
+            container.appendChild(p);
+    });
+}   else{
+    const p= document.createElement("p");
+    p.textContent = data.explanation;
+    container.appendChild(p);
+}
 
-    backButton(container);
+
+    backButtons(container);
 
 }
 
 /*Screen loading*/
 document.addEventListener("DOMContentLoaded",startscreen);
+
+
+
+
