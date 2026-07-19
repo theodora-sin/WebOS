@@ -84,7 +84,7 @@ function updateProgressBar(){
 function SpiceAdventureSeeker(){
   SpiceAdventureSeekerscore +=1;
   questionCount +=1;
-  updatedProgressBar()
+   updateProgressBar()
   console.log("questionCount=" + questionCount+ "SpiceAdventureSeekerscore=" +SpiceAdventureSeekerscore);
   if(questionCount==5){
     console.log("The quiz has done")
@@ -95,7 +95,7 @@ function SpiceAdventureSeeker(){
 function ComfortCozyDiner(){
   ComfortCozyDinerscore +=1;
   questionCount +=1;
-  updatedProgressBar()
+   updateProgressBar()
   console.log("questionCount=" + questionCount+ "ComfortCozyDinerscore=" +ComfortCozyDinerscore);
   if(questionCount==5){
     console.log("The quiz has done")
@@ -106,7 +106,7 @@ function ComfortCozyDiner(){
 function FreshCrispEnthusiast(){
   FreshCrispEnthusiastscore +=1;
   questionCount +=1;
-  updatedProgressBar()
+   updateProgressBar()
   console.log("questionCount=" + questionCount+ "FreshCrispEnthusiastscore=" +FreshCrispEnthusiastscore);
   if(questionCount==5){
     console.log("The quiz has done")
@@ -117,7 +117,7 @@ function FreshCrispEnthusiast(){
 function SweetandDecadent(){
   SweetandDecadentscore +=1;
   questionCount +=1;
-  updatedProgressBar()
+   updateProgressBar()
   console.log("questionCount=" + questionCount+ "SweetandDecadentscore=" +SweetandDecadentscore);
   if(questionCount==5){
     console.log("The quiz has done")
