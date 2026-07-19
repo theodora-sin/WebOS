@@ -353,7 +353,7 @@ function eatScreen(mood){
     right.appendChild(image);
 
   container.appendChild(left);
-  contaner.appendChild(right);
+  container.appendChild(right);
   backButtons(container);
 
 }
