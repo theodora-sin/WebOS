@@ -15,13 +15,13 @@ function startscreen() {
 }
 
 const moodEmoji={
-    Exhausted:"😫",
-    Cozy:"🛌",
-    Happy:"😄",
-    Craving:"🤤",
-    Sad:"😔",
-    Angry:"😡",
-    Surprise:"😲"
+    Exhausted:"\u{1F62B}", // 😫
+    Cozy:"\u{1F6CC}",      // 🛌
+    Happy:"\u{1F604}",     // 😄
+    Craving:"\u{1F924}",   // 🤤
+    Sad:"\u{1F614}",       // 😔
+    Angry:"\u{1F621}",     // 😡
+    Surprise:"\u{1F632}"   // 😲
 };
 
 
