@@ -20,7 +20,7 @@ const countries = {
     dish: "Gyudon (Beef Rice Bowl)",
     image: "assets/Gyudon.jpg",
     ingredients:[
-        "Main:150g thinly sliced beef, ½ yellow onion (thinly sliced), 2 eggs (lightly beaten), 1 cup cooked rice", 
+        "Main ingredients:150g thinly sliced beef, ½ yellow onion (thinly sliced), 2 eggs (lightly beaten), 1 cup cooked rice", 
         "broth:60ml water,2 tbsp soy sauce, 2 tbsp mirin, 1 tsp sugar."],
     steps: [
       "1. Combine broth ingredients with sliced onions, simmer 3–4 min until translucent.",
@@ -34,7 +34,7 @@ const countries = {
     dish:"Bánh Tráng Nướng (Vietnamese Rice Paper Pizza)",
     image:"assets/Vietnam.jpg",
     ingredients:[
-        "Main:1 sheet of dry round rice paper, 1 egg, 1 tablespoon finely chopped green onions",
+        "Main ingredients:1 sheet of dry round rice paper, 1 egg, 1 tablespoon finely chopped green onions",
         "Topping (Pick and Choose): Canned tuna, cooked bacon bits, shredded chicken or cheese",
         "Sauses: Kewpie mayo and Sriracha(or sweet chili sause)"
     ],
@@ -51,7 +51,7 @@ const countries = {
     dish:"Pad Kra Pao(Stir-fried holy basil)",
     image:"assets/thai.jpg",
     ingredients:[
-        "Main: 150 g ground meat (chicken or beef or pork), 3 garlic cloved(minced), 1 to 2 thai bird's eye chilies",
+        "Main ingredients: 150 g ground meat (chicken or beef or pork), 3 garlic cloved(minced), 1 to 2 thai bird's eye chilies",
         "Herb: 1 cup fresh holy basil or Thai sweet basil leaves",
         "Sause: 1 tbsp oyster sause, 1tsp soy sause, 1tsp dark soy sause, 1 tsp fish sause and 1/2 tsp sugar",
         "Serve: 1 fried egg and hot cooked jasmine rice"
@@ -70,7 +70,7 @@ const countries = {
     dish:"Kimchi Bokkeumbap (Korean Kimchi Fried Rice)",
     image:"assets/korean.png",
     ingredients:[
-        "Main: 1 cup of day-old rice, 0.5 cup of well-fermented kimchi(chopped into bite-sized pieces),optional proten(bacon,spam etc), 1 chopped green onion (separate whites and greens)",
+        "Main ingredients: 1 cup of day-old rice, 0.5 cup of well-fermented kimchi(chopped into bite-sized pieces),optional proten(bacon,spam etc), 1 chopped green onion (separate whites and greens)",
         "Sause: 1tbsp kimchi juice, 0.5 tbsp Gochujang and 1tsp soy sause",
         "Touches: 1 tsp toasted sesame oil, 1egg and toasted sesame seeds for garnish",
     ],
@@ -87,7 +87,7 @@ const countries = {
     dish: "Singaporea Economic Bee Hoon",
     image:"assets/singapore.png",
     ingredients:[
-        "Main: 100 g thin rice vermicelli, 0.5 cup shredded cabbage and 0.5 cup bean sprouts, 2 garlic cloves(minced)",
+        "Main ingredients: 100 g thin rice vermicelli, 0.5 cup shredded cabbage and 0.5 cup bean sprouts, 2 garlic cloves(minced)",
         "Sause: 1 tbsp light soy sauce, 1 tsp dark soy sauce (for that classic brown color), 1 tsp oyster sauce, ½ tsp sesame oil, and ¼ cup warm water",
         "Touches(Optional): A tbsp of sambal chili paste and a fried egg"
     ],
@@ -105,7 +105,7 @@ const countries = {
     dish: "Nasi Goreng (Indonesian Fried Rice)",
     image:"assets/indonesia.jpg",
     ingredients:[
-      "Main: 1 cup of cold, precooked jasmine rice, 1 egg, 1 piece of finely diced chicken breast, 2 large eggs",
+      "Main ingredients: 1 cup of cold, precooked jasmine rice, 1 egg, 1 piece of finely diced chicken breast, 2 large eggs",
       "Sause: 2 finely minced garlic, 1 finely sliced small shallot, 1 finely chopped red bird's eye chili,0.5 tsp shrimp paste",
       "Indoesian sweet soy sause alternative: equal amount of regular soy sause and brown sugar "
     ],
@@ -124,7 +124,7 @@ const countries = {
     dish:"Gambas al Ajillo (Spanish Garlic Shrimp)",
     image:"assets/spain.jpg",
     ingredients:[
-      "Main: 150g shrimp of peeled and de-veined shrimp, pat them completely dry with a paper towel, 4 to 5 cloves of garlic.",
+      "Main ingredients: 150g shrimp of peeled and de-veined shrimp, pat them completely dry with a paper towel, 4 to 5 cloves of garlic.",
       "Condiments: 0.25 cup of virgin olive oil, 1 dried ref chili, 1 tbsp fresh lemon juice and a handful of finely chopped fresh parsley"
     ],
     steps:[
@@ -139,7 +139,7 @@ const countries = {
     dish:"Chimichurri Steak (Quick-Seared Steak with Fresh Herb Sauce)",
     image:"assets/argentina.jpg",
     ingredients:[
-      "Main: 1 think-cut steak",
+      "Main ingredients: 1 think-cut steak",
       "Sause: 0.5 cup fresh flat-leaf parsley, 2 minced garlic cloves, 1tbsp red wine vinegar, 3tbsp extra virgin olive oil, 0.5 tsp dried oregano, A pinch of red pepper flakes, salt and black pepper"
     ],
     steps:[
@@ -154,7 +154,7 @@ const countries = {
     dish:"Spaghetti Cacio e Pepe (Cheese and Pepper Pasta)",
     image:"assets/italy.jpg",
     ingredients:[
-      "Main: 100g spaghetti or bucatini, 40g finely grated Pecorino Romano, 1tsp whole black peppercorns.",
+      "Main ingredients: 100g spaghetti or bucatini, 40g finely grated Pecorino Romano, 1tsp whole black peppercorns.",
       "Seasoning: salt for pasta water"
     ],
     steps:[
@@ -170,7 +170,7 @@ const countries = {
     dish:"Pica-Pau (Portuguese Woodpecker Beef)",
     image:"assets/portugal.jpg",
     ingredients:[
-      "Main: 200g of beef steak, cut into bite-sized cubes, 4 sliced thinly large cloves",
+      "Main ingredients: 200g of beef steak, cut into bite-sized cubes, 4 sliced thinly large cloves",
       "Sause: 0.5 cup of pale lager beer, 1.5 tbsp butter, 1 tbsp olive oil, 1 bay leaf, 1 tsp yellow mustard, a splash of white wine vinegar",
       "Toppings: Pickled cauliflower, carrots, and olives",
       "Seasoning: Salt, black pepper and piri-piri sause"
@@ -188,7 +188,7 @@ const countries = {
     dish:"San Bei Ji(Taiwanese Three-Cup Chicken",
     image:"assets/taiwan.jpg",
     ingredients:[
-      "Main: 500g chicken thighs, 1 bulb of garlic, 1 inch piece of sliced ginger,1 big handful of fresh Thai basil",
+      "Main ingredients: 500g chicken thighs, 1 bulb of garlic, 1 inch piece of sliced ginger,1 big handful of fresh Thai basil",
       "Sause: 2 tablespoons toasted sesame oil, 2 tablespoons light soy sause, 2 tablespoons Chinese cooking wine",
     ],
     steps:[
@@ -205,7 +205,7 @@ const countries = {
     dish: "Feijoada (Black Bean & Pork Stew",
     image:"assets/brazil.jpg",
     ingredients:[
-      "Main: 6 slices of diced bacon, 200g smoked sausage into sliced, 0.5 cup of diced onion and garlic, 2 cans of rinced black beans",
+      "Main ingredients: 6 slices of diced bacon, 200g smoked sausage into sliced, 0.5 cup of diced onion and garlic, 2 cans of rinced black beans",
       "Sause: 1 tbsp olive oil, 1 cup chicken broth, 2-3 bay leaves. 1 tsp dried oregano, plus salt and pepper to taste",
       "Optional: pre-cooked jasmine rice for serving"
     ],
@@ -222,7 +222,7 @@ const countries = {
     dish: "Adobong Pusit (Squid Adobo)",
     image:"assets/Philippines.jpg",
     ingredients:[
-      "Main: 500g fresh squid, cleaned and sliced into rings, 4 minced cloves garlic, 1 small chopped onion, 1 diced medium tomato,",
+      "Main ingredients: 500g fresh squid, cleaned and sliced into rings, 4 minced cloves garlic, 1 small chopped onion, 1 diced medium tomato,",
       "Sause: 3tbsp soy sauce, 2tbsp white vinegar or cane vinegar, 1tbsp cooking oil, 1 piece dried bay leaf, salt and ground black pepper to taste",
     ],
     steps:[
@@ -238,7 +238,7 @@ const countries = {
     dish:"Khichdi",
     image:"assets/india.jpg",
     ingredients:[
-      "Main: 0.5 cup white basmati rice, 0.5 cup split red lentils",
+      "Main ingredients: 0.5 cup white basmati rice, 0.5 cup split red lentils",
       "Sause: 2.5 cups water, 1tbsp of neutral oil, 0.5 tsp cumin seeds, 0.25 tsp turmeric powder, salt to taste"
     ],
     steps:[
@@ -255,7 +255,7 @@ const countries = {
     dish: "laska Lemak (Curry Laksa)",
     image: "assets/malaysia.jpg",
     ingredients:[
-      "Main: 200g egg noddles, 200g peeled prawn,handful of bean sprouts, coriander and lime wedges,Optional(fish ball, fish cakes and tofu puffs) ",
+      "Main ingredients: 200g egg noddles, 200g peeled prawn,handful of bean sprouts, coriander and lime wedges,Optional(fish ball, fish cakes and tofu puffs) ",
       "Sause: 2tbsp vegetable oil, 1.5tbsp red curry paste, 1tbsp grated giner, 1 stalk lemongrass, 400 ml chicken stock, 400ml full-fat coconut milk, 1tbsp fish sause, 1tsp sugar"
     ],
     steps:[
@@ -271,7 +271,7 @@ const countries = {
     dish:"Poutine",
     image:"assets/canada.jpg",
     ingredients:[
-      "Main: 1 bag (600-900 g)of frozen French fries, 1 to 2 cups fresh cheese curds(white cheddar)",
+      "Main ingredients: 1 bag (600-900 g)of frozen French fries, 1 to 2 cups fresh cheese curds(white cheddar)",
       "Sause: 1.5-2 cups brown gravy"
     ],
     steps:[
@@ -283,10 +283,43 @@ const countries = {
       "Step 6: Serveimmediately while the fries are still crispy and the cheese gets slightly gooey."
     ]
 
+  },
+  Demark:{
+    flag:"🇩🇰",
+    dish:"Koldskål(Danish cold buttermilk soup)",
+    image:"assets/danish.jpg",
+    ingredients:[
+      "Main ingredients: 2 egg yolks, 500ml plain yogurt (3.5% fat), 500g buttermilk, 2tbsp cane sugar, 1 vanilla bean, 1 tbsp sugar, 1tbsp lemon juice",
+      "Optional: kammerjunkere(Danish sweet biscuit), berries"
+    ],
+    steps:[
+      "Step 1: Use a hand mixer to whisk the egg yolks and sugar into a light and fluffy mixture.",
+      "Step 2: Scrape the seeds from the vanilla bean and mix them with 1tbsp of sugar, then whisk them into the egg mixture.",
+      "Step 3: Whisk the yogurt with the egg yolks, Add the yogurt in 3-4 steps and whisk well in between each step. ",
+      "Step 4: Finally add the buttermilk and mix it well together. Flavor with lemon juice.",
+      "Step 5: Optional--Topped with crumbled kammerjunkere(Danish sweet biscuit) or fresh berries."
+    ]
+  },
+  Nepal:{
+    flag:"🇳🇵",
+    dish:"Nepali Chukauni",
+    image:"assets/nepal.jpg",
+    ingredients:[
+      "Main ingredient: 2 pieces of potatoes, 400g curd, 1 medium onion",
+      "Seasoning: 1tsp cumin powder, 1tsp kashmiri chilli, 1tsp black salt, 0.25tsp salt, coriander leaves"
+    ],
+    steps:[
+      "Step 1: In a large mixing bowl, whisk the yogurt with salt, cumin, coriander and chili powder until smooth.",
+      "Step 2: Gently fold the cubed potatoes, sliced onions, green chilies, and fresh coriander into the yogurt mixture.",
+      "Step 3: Heat the mustard oil in a small pan ocer medium heat. Once it's hot, add the mustard seeds and let them splutter, then add fenugreek seeds and fry until they darken slightly. Turn off the heat and quickely stir in the turmeric powder to avoid burning",
+      "Step 4: Pour the hot mixture directly over the yogurt and potato mix and stir well to combine the flavors.",
+      "Step 5: Garnish with extra fresh coriander and serve at room temperature, tradition serve with rice or roti."
+    ]
+
+
   }
 
 };
-
 function countryScreen() {
   const container = document.getElementById("game-container");
   container.innerHTML = "";
