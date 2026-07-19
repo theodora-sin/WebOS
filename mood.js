@@ -200,7 +200,7 @@ const mood_eat={
     },
     Cozy: {
         dish: "Kimchi-jjigae",
-        image:"assets/kimichi.jpg",
+        image:"assets/kimchi.jpg",
         describe:[
             "There is nothing quite like a traditional clay pot arriving at your table, still furiously bubbling and releasing a cloud of steam that instantly warms your face. The secret to this comfort masterpiece is the fermented kimchi, which creates a complex, deeply savory broth that is perfectly tangy and bold, and has just the right amount of spicy kick to wake up your senses.",
             "This stew doesn't just fill your stomach—it completely revives you. The heat clears your head, the bold flavors satisfy your deepest cravings, and the sheer warmth makes you feel grounded and taken care of.",
