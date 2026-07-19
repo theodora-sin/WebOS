@@ -315,9 +315,41 @@ const countries = {
       "Step 4: Pour the hot mixture directly over the yogurt and potato mix and stir well to combine the flavors.",
       "Step 5: Garnish with extra fresh coriander and serve at room temperature, tradition serve with rice or roti."
     ]
-
-
-  }
+  },
+    Mexico:{
+    flag:"🇲🇽",
+    dish:"Skillet Burrito Bowl",
+    image:"assets/burrito.jpg",
+    ingredients:[
+      "Main ingredient: 300g protein(skinless chicken breast or lean ground beef), 1 bell pepper(diced), 0.5 cup(sweetcorn), 0.5 quick cooking brown rice, 200g black beans(drained and rinsed), 0.5 medium yellow onion in diced, 1 clove minced garlic",
+      "Seasoning: 1.5 tbsp taco seasoning, 0.75 cup chicken broth",
+      "Topping: 0.5 cup shredded Mexican cheese blend, fresh salsa, sour cream and diced avocado"
+    ],
+    steps:[
+      "Step 1: Heat 1 tablespoon of olive oil in a large skillet over medium-high heat. Add your diced chicken or ground beef and sauté until browned. Remove the meat from the pan and set aside.",
+      "Step 2: In the same skillet, saute the onion, garlic and bell pepper until tender",
+      "Step 3: Toss the uncooked rice into the skillet with the veggies and stir for 1-2 minutes until slightly toasted.",
+      "Step 4: Add in taco seasoning, broth, sweetcorn and black bean, and bring the liquid to a gentle boil, then return the cooked meat to the skillet",
+      "Step 5: Reduce the heat to low, cover the skillet with a lid and simmer until the rice is tender and the liquid is absorbed.",
+      "Step 6: Remove the pan from heat, if you add cheese cover the lid again for 5 mintues until it melt, top with salsa, avocado and sour cream before serving."
+    ]
+  },
+  Fiji:{
+    flag:"🇫🇯",
+    dish:"Fiji-Style Sausage Fry",
+    image:"assets/fiji.jpg",
+    ingredients:[
+      "Main ingredients: 4 chicken or beef sausages. 1 sliced medium onion, 3 minced cloved gresh garlic,1 inch peice of grated fresh ginger",
+      "Seasoning:1 diced fresh red or green chili, 1 tbsp dark soy sauce, 0.5 tsp salt, 2tbsp cooking oil"
+    ],
+    steps:[
+      "Step 1: Boil the sausages in water for 3–5 minutes until firm, then remove and slice them into 0.5 ince round",
+      "Step 2: Heat the cooking oil in a frying pan over medium heat. Add half of the sliced onions, garlic, ginger, and chili. Sauté for about 2 minutes until fragrant and lightly browned.",
+      "Step 3: Add the sliced sausages to the pan. Stir in the dark soy sauce and salt. Lower the heat and let it simmer for about 10 minutes, stirring occasionally.",
+      "Step 4: Toss in the remaining fresh onions on top, cover with a lid, and let it sizzle for 2 more minutes. Remove from heat and serve hot"
+    ]
+    }
+ 
 
 };
 function countryScreen() {
