@@ -331,25 +331,30 @@ function eatScreen(mood){
     const container= document.getElementById("mood-container");
     container.innerHTML ="";
 
+    const left= document.createElement("div");
+    left.className = "recipe-left";
+
     const title= document.createElement("h2");
     title.textContent=data.dish;
-    container.appendChild(title);
+    left.appendChild(title);
+
+    const right = document.createElement("div");
+    right.className="mood-right";
 
     const image=document.createElement("img");
     image.src=data.image;
     image.alt= data.dish;
     image.className = "mood-image";
-    container.appendChild(image);
+    right.appendChild(image);
 
     data.describe.forEach(paragraph => {
     const p = document.createElement("p");
     p.textContent = paragraph;
-    container.appendChild(p);
+    left.appendChild(p);
   });
   backButtons(container);
 
 }
-
 
 function cookScreen(mood){
     const data = mood_cook[mood];
