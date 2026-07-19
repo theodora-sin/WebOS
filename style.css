@@ -38,6 +38,12 @@ body.index{
 .game{ 
     font-family: "Benton Sans", "Helvetica Neue",sans-serif,"Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji";
 }
+.mood{
+    background: linear-gradient(135deg, #fff3e0 0%, #ffe0ec 100%);
+    min-height:100vh;
+}
+
+
 
 .intro{
     font-size: 30px;
@@ -119,6 +125,7 @@ p{
     padding:20px;
     max-width:1000px;
 }
+
 
 /*image*/
 .logo-link{
@@ -256,19 +263,13 @@ a:active{
 .index nav a:hover{
     color: #ffd166;
 }
-/*game*/
+
+/*game*//*mood*/
 #game-container{
     max-width:1100px;
     margin:40px auto;
     padding:0 20px;
     box-sizing:border-box;
-}
-.recipe-layout{
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    gap:50px;
-    margin: 30px auto;
 }
 .recipe-left{
     flex:2;
@@ -288,6 +289,14 @@ a:active{
     display: flex;
     justify-content: center;
 }
+.recipe-layout{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:50px;
+    margin: 30px auto;
+}
+
 
 .recipe-image {
     width: 100%;
@@ -315,15 +324,24 @@ a:active{
     margin:20px auto;
     max-width:800px;
 }
-.game-button{
-    width:auto;
-    min-width:160px;
-}
 #mood-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    
     max-width:1100px;
     margin:40px auto;
     padding:0 20px;
     box-sizing:border-box;
+}
+.recipe-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:flex-start;
+    gap:50px;
+    width: 100%;
 }
 .mood-image{
     width: 100%;
@@ -339,11 +357,18 @@ a:active{
     justify-content: center;    
 }
 
+
+
 /* Change CSS based on screen size*/
 @media only screen and (max-width:768px){
-    .flex-container{
-        flex-wrap:wrap;
+    .recipe-row{
+        flex-direction:column;
+        align-items:center;
     }
-}
-
+    .country-button0grid{
+        gap:12px;
+    }
+    .recipe-left{
+        max-width:100%;
+    }
 }
