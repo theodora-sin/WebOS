@@ -115,7 +115,7 @@ function startScreen(){
     const title= document.createElement("h1");
     title.innerText="Comfort Food Blog";
 
-    const title=document.createElement("p");
+    const introText=document.createElement("p");
     introText.innerText="Welcome to Comfort food blog !";
     introText.innerText="This is a space where I share my food blogs. I believe that food is more than just fuel. it's a way to connect, to heal and to celebrate the joy of life. Here, you will find a collection of food from something I made to something I crave. Hoping to spread happeniness through food to everyone"
 
