@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blog</title>
+    <title>World Map Cuisine</title>
     <meta charset="utf-8"/>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" type="image/png" href="assets/favicon.png"/>
       <!--link the webpage's stylesheet-->
       <link rel="stylesheet" href="style.css"/>
-      <link rel="icon" type="image/png" href="assets/favicon.png"/>
-    </head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
 
     <body class="food">
+    <!--Top Navigation Menu-->
+    <div class="topnav">
+      <a href="#food.html" class="active">Blogs</a>
+      <!--Navigation links(hidden)-->
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="Portfolio.html">About Me</a>
+        <a href="personality.html">Food Personality Quiz</a>
+        <a href="game.html">15 minutes recipe</a>
+        <a href="mood.html">Mood Food Matrix</a>
+      </div>
+      <!--bar icon-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
         <header>
             <h1>Comfort Food Blog</h1>
         </header>
-
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Portfolio.html">About Me</a></li>
-          <li><a href="food.html">Blogs</a></li>
-          <li><a href="personality.html">Food Personality Quiz</a></li>
-          <li><a href="game.html">15 minutes recipe</a></li>
-          <li><a href="mood.html">Mood Food Matrix</a></li>
-        </ul>
-      </nav>
         <main>
             <h2>Introduction:</h2>
             <p>"Welcome to Comfort food blog !<br>
@@ -68,6 +74,6 @@ I started this space because I believe that food is more than just fuel; it’s 
           #HKBake #HKStyle #HongKongFood #TraditionalBakery #HongKongCulture</p>
           
         </main>
-    </body>
-
+        <script src="nav.js"></script>
+    </body>    
 </html>
