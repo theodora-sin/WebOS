@@ -266,7 +266,7 @@ function  restaurantScreen(cityId){
     container.appendChild(grid);
 
     const backButton=document.createElement("button");
-    backButton.textContent="Back to intro";
+    backButton.textContent="Back to City";
     backButton.className= "btn";
     backButton.addEventListener("click",cityScreen);
     container.appendChild(backButton); 
