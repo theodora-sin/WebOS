@@ -207,3 +207,4 @@ function detailScreen(postId){
 
 /*Screen loading*/
 document.addEventListener("DOMContentLoaded", startscreen);
+
