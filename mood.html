@@ -8,20 +8,29 @@
       <link rel="icon" type="image/png" href="assets/favicon.png"/>
       <!--link the webpage's stylesheet-->
       <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
     <body class="mood">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Portfolio.html">About Me</a></li>
-          <li><a href="food.html">Blogs</a></li>
-          <li><a href="personality.html">Food Personality Quiz</a></li>
-          <li><a href="game.html">15 minutes recipe</a></li>
-          <li><a href="mood.html">Mood Food Matrix</a></li>
-        </ul>
-      </nav> 
+    <!--Top Navigation Menu-->
+    <div class="topnav">
+      <a href="#mood.html" class="active">Mood Food Matrix</a>
+      <!--Navigation links(hidden)-->
+      <div id="myLinks">
+        <a href="#index.html">Home</a>
+        <a href="#Portfolio.html">About Me</a>
+        <a href="#food.html">Blogs</a>
+        <a href="#personality.html">Food Personality Quiz</a>
+        <a href="game.html">15 minutes recipe</a>
+      </div>
+      <!--bar icon-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <div id="mood-container"></div>
 
     <script src="mood.js"></script>
+    <script src="nav.js"></script>
     </body>
     </html>
+
