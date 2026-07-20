@@ -107,7 +107,7 @@ const cities=[
             image:"assets/tea_shop.jpg",
             description:"A highly popular, well-loved Taiwanese bubble tea chain that specializes in high-quality oolong tea",
             dish:"Dark Roasted Oolong Milk Tea",
-            dishimage:"",
+            dishimage:"assets/tea.jpg",
             price:"$ around $30-70 per person",
             address:"There are many branches,please copy the shop name and search for your nearest branches."
         }
