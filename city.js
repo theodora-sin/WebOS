@@ -201,7 +201,7 @@ function startScreen(){
     const startButton=document.createElement("button");
     startButton.textContent="Start";
     startButton.className="btn";
-    startButton.addEventListener("click",menuScreen);
+    startButton.addEventListener("click",cityScreen);
 
     container.append(title,introText,startButton);
 }
