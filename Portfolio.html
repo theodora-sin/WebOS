@@ -8,6 +8,8 @@
         <!--link the webpage's stylesheet-->
         <link rel="stylesheet" href="style.css"/>
         <link rel="icon" type="image/png" href="assets/favicon.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
         <!-- Latest p5.js -->
         <script src="lib/p5.min.js"></script>
         <script src="lib/p5.sound.min.js"></script>
@@ -16,21 +18,26 @@
         <script src="lib/planck.min.js"></script>
         <script src="lib/p5play.js"></script>
     </head>
-
     <body class="portfolio">
+    <!--Top Navigation Menu-->
+    <div class="topnav">
+      <a href="#Portfolio.html" class="active">About Me</a>
+      <!--Navigation links(hidden)-->
+      <div id="myLinks">
+        <a href="#index.html">Home</a>
+        <a href="#food.html">Blogs</a>
+        <a href="#personality.html">Food Personality Quiz</a>
+        <a href="game.html">15 minutes recipe</a>
+        <a href="mood.html">Mood Food Matrix</a>"
+      </div>
+      <!--bar icon-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
         <header>
             <h1>About Me</h1>
         </header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Portfolio.html">About Me</a></li>
-          <li><a href="food.html">Blogs</a></li>
-          <li><a href="personality.html">Food Personality Quiz</a></li>
-          <li><a href="game.html">15 minutes recipe</a></li>
-          <li><a href="mood.html">Mood Food Matrix</a></li>
-        </ul>
-      </nav> 
         <main>
             <h2>About Me:</h2>
             <p>Hi,I'm Theodora, and I'm aspiring to become an electronic enginner because I'm fascinating by how the world changes through semiconducting industry.<br>
@@ -52,6 +59,7 @@
         </div>
         </main>
         <script src="script.js"></script>
+        <script src="nav.js"></script>
     </body>
 
 </html>
