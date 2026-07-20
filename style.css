@@ -453,3 +453,34 @@ a:active{
         margin-right:6%;
     }
 }
+
+/* print out recipe*/
+@media print{
+    nav,.button-container,.country-button-grid,header img,.logo-link,footer{
+        display: none;
+    }
+    body{
+        background:none;
+        color:black;
+    }
+    .recipe-layout{
+        display:block;
+        animation:none;
+    }
+    .recipe-image{
+        max-width:400px;
+        margin: 0 auto 16px;
+    }
+    .recipe-left{
+        max-width:100%;
+    }
+    a[href]::after{
+        content: " (" attr(href) ")";  /* show link URLs since clicking doesn't work on paper */
+        font-size: 12px;
+        color: #555;
+    }
+
+    @page{
+        margin: 1.5cm;
+    }
+}
