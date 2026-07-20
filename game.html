@@ -8,25 +8,32 @@
       <link rel="icon" type="image/png" href="assets/favicon.png"/>
       <!--link the webpage's stylesheet-->
       <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
     <body class="game">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Portfolio.html">About Me</a></li>
-          <li><a href="food.html">Blogs</a></li>
-          <li><a href="personality.html">Food Personality Quiz</a></li>
-          <li><a href="game.html">15 minutes recipe</a></li>
-          <li><a href="mood.html">Mood Food Matrix</a></li>
-        </ul>
-      </nav> 
+    <!--Top Navigation Menu-->
+    <div class="topnav">
+      <a href="#game.html" class="active">15 minutes recipe</a>
+      <!--Navigation links(hidden)-->
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="Portfolio.html">About Me</a>
+        <a href="food.html">Blogs</a>
+        <a href="personality.html">Food Personality Quiz</a>
+        <a href="mood.html">Mood Food Matrix</a>
+      </div>
+      <!--bar icon-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <div id="game-container"></div>
 
     <script src="game.js"></script>
+    <script src="nav.js"></script>
     <script type="module" defer>
       import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
       polyfillCountryFlagEmojis();
     </script>
     </body>
     </html>
-
