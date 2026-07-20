@@ -167,7 +167,7 @@ const cities=[
             image:"assets/oldday_shop.jpg",
             description:"It is one of Macau’s most famous street food spots, renowned for its rich, aromatic curry beef offal",
             dish:"beef offal",
-            dishimage:"assets/oldday_shop.jpg",
+            dishimage:"assets/oldday.jpg",
             price:"$$ MOP 55 to MOP 100",
             address:"G/F, 8 Rua do Cunha,Taipa Village, Macau."
         },
