@@ -260,6 +260,7 @@ function  restaurantScreen(cityId){
 
         card.append(img, label);
         card.addEventListener("click", () =>detailedScreen(city.id, restaurant.id));
+        grid.appendChild(card);
     }); 
 
     container.appendChild(grid);
