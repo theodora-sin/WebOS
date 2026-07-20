@@ -132,7 +132,7 @@ const cities=[
             image:"assets/ice_shop.jpg",
             description:"A popular dessert chain known for specializing in authentic artisanal Japanese shaved ice, commonly known as kakigori",
             dish:"Kyoto Uji Kintoki ",
-            dishimage:"assets/ice.jpg",
+            dishimage:"ice.jpg",
             price:"$$ around $60 per person",
             address:"There are many branches,please copy the shop name and search for your nearest branches."
         },
