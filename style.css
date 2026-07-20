@@ -284,6 +284,31 @@ a:active{
     color: #ffd166;
 }
 
+.topnav{
+    overflow:hidden;
+    background-color:#383737;
+    position:relative;
+}
+.topnav #myLinks {
+  display: none;
+}
+.topnav a{
+    color:white;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size:17px;
+    display: block;
+}
+.topnav a:hover{
+    background-color:#c7c6c6;
+    color: black;
+}
+.active{
+    background-color:#9144cd;
+    color:White;
+}
+
+
 /*personality quiz*/
 #progress-container{
     width:100%;
