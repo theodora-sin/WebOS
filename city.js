@@ -89,7 +89,7 @@ const cities=[
             dish:"Deep-fried taro balls",
             dishimage:"assets/taroball.jpg",
             price:"$",
-            address:"103, Taiwan, Taipei City, Datong District, Ningxia Rd, 091攤位"
+            address:"103, Taiwan, Taipei City, Datong District, Ningxia Rd, 091 stall"
         },
         {
             id:"beefnoddles",
@@ -99,7 +99,7 @@ const cities=[
             dish:"red-braised beef noodles",
             dishimage:"assets/beef.jpg",
             price:"$$ $200–400 per person",
-            address:"No. 2號, Lane 14, Section 1, Kaifeng St, Liming Village, Zhongzheng District, Taipei City, Taiwan 100"
+            address:"No. 2, Lane 14, Section 1, Kaifeng St, Liming Village, Zhongzheng District, Taipei City, Taiwan 100"
         },
         {
             id:"tea",
@@ -193,7 +193,7 @@ function startScreen(){
     container.classList.add("fade-in");
 
     const title= document.createElement("h1");
-    title.innerText="Recommend Restuarant";
+    title.innerText="Recommend Restaurant";
 
     const introText=document.createElement("p");
     introText.innerText="This is a place where I share my favorite restaurants and food spots. I don't believe in gatekeeping good food—I want everyone to enjoy amazing meals while traveling. Looking back at these dishes always makes me crave them, and I hope my recommendations help you discover places you'll love too.";
