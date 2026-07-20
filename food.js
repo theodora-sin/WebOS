@@ -202,6 +202,11 @@ function detailScreen(postId){
     backButton.addEventListener("click", menuScreen);
     container.appendChild(backButton);
 
+    const returnButton=document.createElement("button");
+    returnButton.textContent="Back to Intro";
+    returnButton.className= "btn";
+    returnButtpn.addEventListener("click",startScreen);
+    container.appendChild(returnButton)
 
 }
 
