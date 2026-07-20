@@ -463,7 +463,7 @@ nav ul{
     width:90px;
     height:90px;
     object-fit:cover;
-    border-radius:6px;
+    border-radius:3px;
     flex-shrink:0;
 }
 .dish-highlight h3{
