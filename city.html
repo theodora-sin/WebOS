@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>World Map Cuisine</title>
+    <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" type="image/png" href="assets/favicon.png"/>
+      <!--link the webpage's stylesheet-->
+      <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+ 
+    <body class="food">
+    <!--Top Navigation Menu-->
+    <div class="topnav">
+      <a href="city.html" class="active">City Food Recommendation</a>
+      <!--Navigation links(hidden)-->
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="Portfolio.html">About Me</a>
+        <a href="food.html">Blogs</a>
+        <a href="personality.html">Food Personality Quiz</a>
+        <a href="game.html">15 minutes recipe</a>
+        <a href="mood.html">Mood Food Matrix</a>
+      </div>
+      <!--bar icon-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+        <main>
+            <!-- blog.js renders the intro / menu / detail screens into this container -->
+            <div id="city-container"></div>
+        </main>
+        <script src="nav.js"></script>
+        <script src="city.js"></script>
+    </body>    
+</html>
