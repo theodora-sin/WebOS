@@ -193,7 +193,7 @@ function startScreen(){
     container.classList.add("fade-in");
 
     const title= document.createElement("h1");
-    title.innerText="Recommend restuarant";
+    title.innerText="Recommend Restuarant";
 
     const introText=document.createElement("p");
     introText.innerText="This is a place where I share my favorite restaurants and food spots. I don't believe in gatekeeping good food—I want everyone to enjoy amazing meals while traveling. Looking back at these dishes always makes me crave them, and I hope my recommendations help you discover places you'll love too.";
