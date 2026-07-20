@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Food Personality Quiz</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- import the webpage's stylesheet -->
-        <link rel="stylesheet" href="style.css">
-        <!-- import the webpage's javascript file -->
-        <script src="personality.js" defer></script>
-        <link rel="icon" type="image/png" href="assets/favicon.png"/>
-    </head>
+<html>
+  <head>
+    <title>World Map Cuisine</title>
+    <meta charset="utf-8"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" type="image/png" href="assets/favicon.png"/>
+      <!--link the webpage's stylesheet-->
+      <link rel="stylesheet" href="style.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
 
     <body class="quiz">
+    <!--Top Navigation Menu-->
+    <div class="topnav">
+      <a href="#personality.html" class="active">Food Personality Quiz</a>
+      <!--Navigation links(hidden)-->
+      <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="Portfolio.html">About Me</a>
+        <a href="food.html">Blogs</a>
+        <a href="game.html">15 minutes recipe</a>
+        <a href="mood.html">Mood Food Matrix</a>
+      </div>
+      <!--bar icon-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>        
         <header>
             <h1>Sensation Quiz<br>🍱🥡🍟🍝 🌮</h1>
-        </header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Portfolio.html">About Me</a></li>
-          <li><a href="food.html">Blogs</a></li>
-          <li><a href="personality.html">Food Personality Quiz</a></li>
-		  <li><a href="game.html">15 minutes recipe</a></li>
-          <li><a href="mood.html">Mood Food Matrix</a></li>
-        </ul>
-      </nav>    
+        </header>  
 			<div class="pargraph">
 	            <p>Have you ever wonder what your cravings say about your personality?</p>
 	            <p>This quick 5-question quiz decodes your sensory perferences--from crunch to heat to reveal your exact food vibe.</p>
@@ -176,6 +181,7 @@
       <button id="restart">Restart</button>
       
   </main>
+  <script src="nav.js"></script>
 </body>
 
 </html>
