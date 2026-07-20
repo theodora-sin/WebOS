@@ -227,10 +227,11 @@ function cityScreen(){
         });
         grid.appendChild(button);
     });
+    container.appendChild(grid);
 }
 
 /*Choosing Restaurant*/
-function restuarantScreen(cityId){
+function  restaurantScreen(cityId){
     const city = cities.find(c => c.id === cityId);
     if (!city) return;
 
@@ -258,7 +259,7 @@ function restuarantScreen(cityId){
         label.innerText =  restaurant.shop;
 
         card.append(img, label);
-        card.addEventListener("click", () => detailScreen(restaurant.id));
+       card.addEventListener("click", () => detailScreen(city.id, restaurant.id));
         grid.appendChild(card);
     }); 
 
@@ -275,6 +276,9 @@ function restuarantScreen(cityId){
 function detailedScreen(cityId, restaurantId) {
     const city = cities.find(c => c.id === cityId);
     if (!city) return;
+
+    const restaurant = city.restaurant.find(r => r.id === restaurantId);
+    if (!restaurant) return;
     container.innerHTML="";
     container.classList.add("fade-in");
 
