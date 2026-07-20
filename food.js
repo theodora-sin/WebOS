@@ -7,6 +7,7 @@ const blogs=[
     {
         id:"siumai",
         title:"Siu Mai",
+        image:"assets/siumai.png",
         alt:"siumai_image",
         pargraphs:[
             "Siu mai is a classic Hong Kong street food which is steaming hot and warm my heart all the time.",
@@ -18,6 +19,7 @@ const blogs=[
     {
         id:"Chapagetti",
         title:"Chapagetti with deep fried fish cake",
+        image:"assets/noodles.png",
         alt:"noodles_image",
         pargraphs:[
             "Instant Chapagetti paired with golder, deep-fried Hong Kong style fish cake is my late-night snack option.",
@@ -29,6 +31,7 @@ const blogs=[
     {
         id:"MatchaBrownies",
         title:"Matcha Brownies",
+        image:"assets/matcha_brownies.jpeg",
         alt:"matcha_brownies_image",
         pargraphs:[
             "Nothing round out of my comfort food with a fresh batch of matcha white chocolate chip brownies.Pairing a warm, fudgy brownie with a steaming hot matcha latte creates the ultimate cozy afternoon escape.",
@@ -40,6 +43,7 @@ const blogs=[
     {
         id:"buttertteok",
         title:"Butter Tteok",
+        image:"assets/buttertteok.jpg",
         alt:"butter_tteok_image",
         pargraphs:[
             "Butter tteok  has crispy, caramelized edges that shatters slightly when you bite into it, inner has a chewy, bouncy,mochi-like center.",
@@ -51,6 +55,7 @@ const blogs=[
     {
         id:"hotpot",
         title:"Hotpot",
+        image:"assets/hotpot.jpg",
         alt:"hotpot_image",
         pargraphs:[
             "Hotpot is a way to get people together. People put their food in a big pot of hot broth and eat it when it is cooked. This is perfect for when you have a friends over you can talk and laugh and have a nice meal together.",
@@ -62,6 +67,7 @@ const blogs=[
     {
         id:"sesameball",
         title:"Sesame Ball",
+        image:"assets/sesameball.jpg",
         alt:"sesameball_image",
         pargraphs:[
             "In my opinion, Sesame balls are the best thing to eat during Lunar New Year. They make people happy, Bring good luck.",
@@ -73,6 +79,7 @@ const blogs=[
     {
         id:"pineapplebun",
         title:"Pineapple Bun",
+        image:"assets/pinapplebun.jpg",
         alt:"pineapplebun_image",
         pargraphs:[
             "Pineapple Bun is a beloved traditional pastry from Hong Kong. Despite its name, it actually doesn’t contain any pineapple,the name comes from its golden, crackly top layer that looks like the texture of a pineapple which make from cookie dough.",
@@ -84,6 +91,7 @@ const blogs=[
     {
         id:"eggtarts",
         title:"Egg Tarts",
+        image:"assets/eggtarts.jpg",
         alt:"eggtarts_image",
         pargraphs:[
             "Egg tarts are really something in Hong Kong. They have two kinds of bases for egg tarts. You can get a base that's like a buttery cookie or one that is like flaky puff pastry.",
@@ -95,10 +103,11 @@ const blogs=[
         hashtags:["HKBake","HK Style","TraditionalBakery"]
     }
     
-]
+];
 
 const container=document.getElementById("food-container");
 
+/*start screen*/
 function startScreen(){
     container.innerHTML="";
     container.classList.add("fade-in");
@@ -118,6 +127,7 @@ function startScreen(){
     container.append(title,introText,startButton);
 }
 
+/*menu screen*/
 function menuScreen(){
     container.innerHTML="";
     container.classList.add("fade-in");    
@@ -147,6 +157,7 @@ function menuScreen(){
         grid.appendChild(card);
     }); 
     container.appendChild(grid);
+
     const backButton=document.createElement("button");
         backButton.textContent="Back to intro";
         backButton.className="btn";
@@ -154,6 +165,7 @@ function menuScreen(){
         container.appendChild(backButton); 
 }
 
+/*Blogs*/
 function detailScreen(postId){
     const post = posts.find(p => p.id === postId);
     if (!post) return;
@@ -162,6 +174,10 @@ function detailScreen(postId){
     container.classList.add("fade-in"); 
     
     const heading=document.createElement("h3");
+    heading.innerText=post.title;
+    container.appendChild(heading);
+
+    const img= document.createElement("img");
     img.src=post.image;
     img.alt=post.alt;
     img.className="foodimage";
@@ -174,17 +190,20 @@ function detailScreen(postId){
     });
     
     const hashtags=document.createElement("p");
-    hashtags.innerText=post.hashtags;
+    hashtags.innerText=post.hashtags
+        .map(tag => "#" + tag.replace(/\s+/g, ""))
+        .join(" ");
     hashtags.className="hashtags";
     container.appendChild(hashtags);
 
     const backButton=document.createElement("button");
-    backButton.textContent="Menu"
+    backButton.textContent="Menu";
     backButton:className="btn";
     backButton.addEventListener("click", menuScreen);
     container.appendChild(backButton);
+
+
 }
 
 /*Screen loading*/
 document.addEventListener("DOMContentLoaded", startscreen);
-
