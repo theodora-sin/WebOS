@@ -245,31 +245,30 @@ function  restaurantScreen(cityId){
     const grid=document.createElement("div");
     grid.className="blog-menu-grid";
 
-    city.restaurant.forEach(restuarant => {
+    city.restaurant.forEach(restaurant => {
         const card = document.createElement("button");
         card.className = "blog-card";
         card.setAttribute("aria-label", "View: " + restaurant.shop);
 
         const img=document.createElement("img");
         img.src=restaurant.dishimage;
-        img.src=restaurant.dish;
+        img.alt=restaurant.dish;
         img.className = "foodimage blog-card-img";
 
         const label = document.createElement("span");
         label.innerText =  restaurant.shop;
 
         card.append(img, label);
-       card.addEventListener("click", () => detailScreen(city.id, restaurant.id));
-        grid.appendChild(card);
+        card.addEventListener("click", () =>detailedScreen(city.id, restaurant.id));
     }); 
 
     container.appendChild(grid);
 
     const backButton=document.createElement("button");
-        backButton.textContent="Back to intro";
-        backButton.className= "btn";
-        backButton.addEventListener("click",cityScreen);
-        container.appendChild(backButton); 
+    backButton.textContent="Back to intro";
+    backButton.className= "btn";
+    backButton.addEventListener("click",cityScreen);
+    container.appendChild(backButton); 
 }
 
 /* Restuarant detail*/
@@ -334,7 +333,7 @@ function detailedScreen(cityId, restaurantId) {
 
     const backButton=document.createElement("button");
     backButton.textContent="Back to city";
-    backButton:className= "btn";
+    backButton.className= "btn";
     backButton.addEventListener("click",() => restaurantScreen(cityId));
     container.appendChild(backButton);
 
