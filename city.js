@@ -52,7 +52,7 @@ const cities=[
             shop:"Nezu Kamachiku",
             image:"assets/udon_shop.jpg",
             description:"Well known for Udon noodles, tempura & sake in an early 20th-century stone building overlooking a tranquil garden.",
-            dish:"Hademade Udon and tempura",
+            dish:"Handmade Udon and tempura",
             dishimage:"assets/udon1.jpg",
             price:"$$, around ¥1,000–2,000 per person",
             address:"2 Chome-14-18 Nezu, Bunkyo City, Tokyo 113-0031, Japan",
@@ -67,7 +67,7 @@ const cities=[
             dishimage:"assets/tonkatsu.jpg",
             price:"$$ around ¥2200 per person",
             address:"4 Chome-13-3 Ginza, Chuo City, Tokyo 104-0061, Japan",
-            map:"google.com/maps/search/tonkatsu+marushichi/@35.6922825,139.7566654,13z?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
+            map:"https://www.google.com/maps/search/tonkatsu+marushichi/@35.6922825,139.7566654,13z?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
         },
         {
             id:"skewers",
@@ -117,7 +117,7 @@ const cities=[
             dishimage:"assets/tea.jpg",
             price:"$ around $30-70 per person",
             address:"There are many branches,please copy the shop name and search for your nearest branches.",
-            map:"google.com/maps/search/The+Oolong+Project/@25.0457197,121.5111853,17z?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
+            map:"https://www.google.com/maps/search/The+Oolong+Project/@25.0457197,121.5111853,17z?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
         }
         ]
     },
@@ -391,6 +391,13 @@ function detailedScreen(cityId, restaurantId) {
     map.textContent="📍 Open in Google Maps";
     map.target = "_blank";
     map.rel="noopener noreferrer";
+
+    const mapimg=document.createElement("img");
+    img.src="assets/map.png";
+    img.alt="Open in Google Map";
+    img.width= 40;
+    
+    map.appendChild(img);
     right.appendChild(map);
 
     const backButton=document.createElement("button");
@@ -409,4 +416,5 @@ function detailedScreen(cityId, restaurantId) {
 
 /*Screen loading*/
 document.addEventListener("DOMContentLoaded", startScreen);
+
 
