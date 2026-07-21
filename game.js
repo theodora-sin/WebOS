@@ -203,7 +203,7 @@ const countries = {
   Brazil:{
     flag:"🇧🇷",
     dish: "Feijoada (Black Bean & Pork Stew)",
-    image:"assets/brazil.jpg",
+    image:"assets/Brazil.jpg",
     ingredients:[
       "Main ingredients: 6 slices of diced bacon, 200g smoked sausage into sliced, 0.5 cup of diced onion and garlic, 2 cans of rinced black beans",
       "Sause: 1 tbsp olive oil, 1 cup chicken broth, 2-3 bay leaves. 1 tsp dried oregano, plus salt and pepper to taste",
