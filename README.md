@@ -13,6 +13,10 @@ Mood Food Matrix — Depending on your mood, this page helps you decide between 
 
 City Food Recommendation — Choose a city, browse photos of dishes, and get a restaurant recommendation along with its address.
 
+AI Usage:
+I mostly used Claude and ChatGPT to help me fix my code. This is because I needed help finding mistakes that I could not see. For example I had problems with syntax errors that I did not know how to fix. I also had issues, with class names that did not match.. Sometimes I had specific problems like when a link stopped working after I added a picture to it.
+I came up with the idea, game design and how the screens would look all by myself. I did this work before I used any AI tools. I only used AI when I got stuck with problems that I could not solve on my own. So AI helped me find and fix coding mistakes. It did not help me come up with the core ideas or design of the project. I used Claude and ChatGPT to help me troubleshoot and correct coding errors not to generate the main ideas of the project.
+
 Imaging/audio contribution
 -gifthub logo:https://seeklogo.com/free-vector-logos/github
 -AI avatar: https://www.girlswhocodegirls.com/
