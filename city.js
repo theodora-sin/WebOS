@@ -182,7 +182,43 @@ const cities=[
             address:"There are many branches,please copy the shop name and search for your nearest branches."
         }
     ]
-    }
+    },
+    {
+        id:"London",
+        name:"London",
+        restaurant:[{
+            id:"bakery",
+            shop:"Arôme Bakery",
+            image:"assets/arome_shop.webp",
+            description:"Cozy bakery with a trendy vibe, known for its unique fusion of classic French pastry techniques and Asian-inspired flavours.",
+            dish:"Apple Miso Danish with Miso Caramel Glaze",
+            dishimage:"arome.jpg",
+            price:"$$ £10–20 per person",
+            address:"9 Mercer St, London WC2H 9QJ"
+        },
+        {
+            id:"matcha",
+            shop:"Tsujiri",
+            image:"assets/matcha_shop.jpg",
+            description:"Specialise in ceremonial-grade matcha from Uji,Japan, serving Matcha ice cream and dessert",
+            dish:"Shiratama Sundae",
+            dishimage:"matcha.jpg",
+            price:"$ £5–10 per person",
+            address:"33 Newport Ct, London WC2H 7PQ"
+        },
+        {
+            id:"korean",
+            shop:"WooJung",
+            image:"asssets/korean_shop.jpg",
+            description:"Serving authetic Korean food with many highlighting dishes, it has generous price and portion.",
+            dish:"KKanpung-Gi",
+            price:"$$, £10–20 per person",
+            address:"73 New Oxford St, London WC1A 1DG"
+        }    
+
+
+        ]
+    }    
 ]
 
 const container=document.getElementById("city-container");
