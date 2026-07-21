@@ -185,7 +185,7 @@ const countries = {
   },
   Taiwan:{
     flag:"🇹🇼",
-    dish:"San Bei Ji(Taiwanese Three-Cup Chicken",
+    dish:"San Bei Ji(Taiwanese Three-Cup Chicken)",
     image:"assets/taiwan.jpg",
     ingredients:[
       "Main ingredients: 500g chicken thighs, 1 bulb of garlic, 1 inch piece of sliced ginger,1 big handful of fresh Thai basil",
@@ -202,7 +202,7 @@ const countries = {
   },
   Brazil:{
     flag:"🇧🇷",
-    dish: "Feijoada (Black Bean & Pork Stew",
+    dish: "Feijoada (Black Bean & Pork Stew)",
     image:"assets/brazil.jpg",
     ingredients:[
       "Main ingredients: 6 slices of diced bacon, 200g smoked sausage into sliced, 0.5 cup of diced onion and garlic, 2 cans of rinced black beans",
