@@ -370,7 +370,7 @@ function detailedScreen(cityId, restaurantId) {
     container.appendChild(layout);
 
     const backButton=document.createElement("button");
-    backButton.textContent="Back to restaurant"";
+    backButton.textContent="Back to restaurant";
     backButton.className= "btn";
     backButton.addEventListener("click",() => restaurantScreen(cityId));
     container.appendChild(backButton);
