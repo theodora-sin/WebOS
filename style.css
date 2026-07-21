@@ -489,6 +489,14 @@ nav ul{
     margin:0;
     font-size:15px;
 }
+.dish-label{
+    display:block;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:0.06em;
+    color:#a33b3b;
+    margin-bottom:2px;
+}
 .restaurant-detail.address{
     color:#575555;
     font-size:18px;
