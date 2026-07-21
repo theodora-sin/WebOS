@@ -232,10 +232,85 @@ const cities=[
             price:"$$, £10–20 per person",
             address:"73 New Oxford St, London WC1A 1DG",
             map:"https://www.google.com/maps/place/WooJung/@51.5166273,-0.1305324,17z/data=!3m2!4b1!5s0x48761b32913192f3:0xe9c80fc5fc5daa60!4m6!3m5!1s0x48761b32914e3abb:0xeb4869a559664754!8m2!3d51.516624!4d-0.1279575!16s%2Fg%2F11bw3dpqbn?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
-        }    
+        },    
+]
+    },
+    {
+        id:"Osaka",
+        name:"Osaka",
+        restaurant:[{
+            id:"studio",
+            shop:"Kinopio's Café:Universal Studios Japan",
+            image:"assets/studio.jpg",
+            description:"Kinopio's Café (also known as Toadstool Cafe). It is a highly themed, quick-service restaurant designed to look like a giant mushroom, featuring dishes crafted by Chef Toad from Super Mario.",
+            dish:"Chef's Special: Omelet Rice with Shrimp & Mushroom Cream Stew",
+            dishimage:"assets/studio_food.jpg",
+            price:"$$, ¥2,000–3,000 per person",
+            address:"2 Chome-1-33 Sakurajima, Konohana Ward, Osaka, 554-0031, Japan",
+            map:"https://www.google.com/maps/place/Kinopio's+Cafe/@34.6676194,135.430082,17z/data=!4m15!1m8!3m7!1s0x6000e903643fc01d:0xc2316b38ad650124!2sKinopio's+Cafe!8m2!3d34.667881!4d135.4301919!10e9!16s%2Fg%2F11qyfq39v0!3m5!1s0x6000e903643fc01d:0xc2316b38ad650124!8m2!3d34.667881!4d135.4301919!16s%2Fg%2F11qyfq39v0?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+            id:"ramen",
+            shop:"The Ramen War",
+            image:"assets/war.jpg",
+            description:"A popular, moden Japanese ramen chain, it is known for its stylish and uniquely named bowls",
+            dish:"Pistol",
+            dishimage:"assets/war_food.jpg",
+            price:"$,¥1,000–2,000 per person ",
+            address:"There are many branches,please copy the shop name and search for your nearest branches.",
+            map:"https://www.google.com/maps/search/The+Ramen+War/@34.7842711,132.3134146,6z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D",
+        },
+        {
+            id:"takoyaki ",
+            shop:"Takoyaki Wanaka ",
+            image:"assets/takoyaki_shop.jpg",
+            description:"One of the most famous street food chain that only made takoyaki(savory octopus ball)",
+            dish:"Takoyaki",
+            dishimage:"assets/takoyaki.jpg",
+            price:"$ around ¥ 300 to 800 per person",
+            address:"There are many branches,please copy the shop name and search for your nearest branches.",
+            map:"google.com/maps?sca_esv=36d287bdbbc71431&rlz=1C1CHBF_en-GBHK1173HK1173&biw=932&bih=879&output=search&q=Takoyaki+Wanaka&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cqCQj_06QnZs315LoFmPf5bBLHMJ0vMQmTbuI72DM7jn--wavS8TcVVggSf-u7aBQpqR7-Mv1_7cDWgsUufYqZpbKy9zTKCNKDemw88JFWgzgT1gIj5mUazeKucHrUZPyv-YseKkgdr7tiyQyOuNy-o8nT8Zq_Dk9-zYP1uaJ0eOruYFj4haG46Qo8Kp7hjHaazNieQ&entry=mc&ved=1t:200715&ictx=111"
+        }
 
+    ]},
+    {
+        id:"Copenhagen",
+        name:"Copenhagen",
+        restaurant:[{
+            id:"bun",
+            shop:"Buka",
+            image:"assets/bun_shop.jpg",
+            description:"One of the most popular bakery for its visually stunning, premium baked food and cozy cafe atmosphere.",
+            dish:"Cinnamon Roll",
+            dishimage:"assets/bun.jpg",
+            price:"$ kr 50–100",
+            address:"There are many branches,please copy the shop name and search for your nearest branches.",
+            map:"https://www.google.com/maps/search/buka+copenhagen/@55.6822563,12.4807171,12z/data=!3m1!4b1?authuser=0&entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
 
-        ]
+        },
+        {
+            id:"dessert",
+            shop:"Andersen Bakery",
+            image:"assets/dessert_shop.jpg",
+            description:"A highly-rated, unique fusion bakery renowned for combining traditional Danish baking techniques with Japanese precision",
+            dish:"Signature Chocolate pastry",
+            dishimage:"assets/dessert.jpg",
+            price:"$ kr 50–100",
+            address:"Thorshavnsgade 26, 2300 København, Denmark",
+            map:"https://www.google.com/maps/place/Andersen+Bakery/@55.6672393,12.5785255,14z/data=!4m10!1m2!2m1!1sAndersen+bakery+copenhagen+description!3m6!1s0x4652530d731eb667:0x421b0fb5b128311!8m2!3d55.6672402!4d12.5785336!15sCiZBbmRlcnNlbiBiYWtlcnkgY29wZW5oYWdlbiBkZXNjcmlwdGlvblooIiZhbmRlcnNlbiBiYWtlcnkgY29wZW5oYWdlbiBkZXNjcmlwdGlvbpIBBmJha2VyeZoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQyeENjR05xV2twVVYzQlZaRlZHU21WRlVtMVViR3h4WW5wc05GVXlZeEFC4AEA-gEFCLMBEEk!16s%2Fg%2F11b77w27tb?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+            id:"danish",
+            shop:"Tivoli Hallen",
+            image:"assets/tivoli_shop.jpg",
+            description:"A old-fashioned basement restaurant that serve a wide variety of traditional Danish food.",
+            dish:"Raw beef tartare with egg yolk",
+            dishimage:"assets/tivoli.jpg,",
+            price:"$$ kr100-150 per person",
+            address:"Vester Voldgade 91, 1470 København, Denmark",
+            map:"https://www.google.com/maps/place/Tivolihallen/@55.6744927,12.5730881,17z/data=!4m15!1m8!3m7!1s0x46525313b515cb95:0xe42c12ec2e006b38!2sTivolihallen!8m2!3d55.6746023!4d12.5731193!10e9!16s%2Fg%2F1v6qg71g!3m5!1s0x46525313b515cb95:0xe42c12ec2e006b38!8m2!3d55.6746023!4d12.5731193!16s%2Fg%2F1v6qg71g?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
+        }
+    ]
     }
 ]
 
@@ -422,6 +497,4 @@ function detailedScreen(cityId, restaurantId) {
 
 /*Screen loading*/
 document.addEventListener("DOMContentLoaded", startScreen);
-
-
 
