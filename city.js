@@ -241,10 +241,10 @@ const cities=[
         restaurant:[{
             id:"studio",
             shop:"Kinopio's Café:Universal Studios Japan",
-            image:"assets/studio.jpg",
+            image:"studio.jpg",
             description:"Kinopio's Café (also known as Toadstool Cafe). It is a highly themed, quick-service restaurant designed to look like a giant mushroom, featuring dishes crafted by Chef Toad from Super Mario.",
             dish:"Chef's Special: Omelet Rice with Shrimp & Mushroom Cream Stew",
-            dishimage:"assets/studio_food.jpg",
+            dishimage:"studio_food.jpg",
             price:"$$, ¥2,000–3,000 per person",
             address:"2 Chome-1-33 Sakurajima, Konohana Ward, Osaka, 554-0031, Japan",
             map:"https://www.google.com/maps/place/Kinopio's+Cafe/@34.6676194,135.430082,17z/data=!4m15!1m8!3m7!1s0x6000e903643fc01d:0xc2316b38ad650124!2sKinopio's+Cafe!8m2!3d34.667881!4d135.4301919!10e9!16s%2Fg%2F11qyfq39v0!3m5!1s0x6000e903643fc01d:0xc2316b38ad650124!8m2!3d34.667881!4d135.4301919!16s%2Fg%2F11qyfq39v0?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
@@ -252,10 +252,10 @@ const cities=[
         {
             id:"ramen",
             shop:"The Ramen War",
-            image:"assets/war.jpg",
+            image:"war.jpg",
             description:"A popular, moden Japanese ramen chain, it is known for its stylish and uniquely named bowls",
             dish:"Pistol",
-            dishimage:"assets/war_food.jpg",
+            dishimage:"war_food.jpg",
             price:"$,¥1,000–2,000 per person ",
             address:"There are many branches,please copy the shop name and search for your nearest branches.",
             map:"https://www.google.com/maps/search/The+Ramen+War/@34.7842711,132.3134146,6z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D",
