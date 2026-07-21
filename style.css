@@ -57,8 +57,8 @@ body.index{
     min-height:100vh;
 }
 .city{
-background: #baf1ff;
-background: radial-gradient(circle, rgba(186, 241, 255, 1) 0%, rgba(132, 189, 232, 1) 35%, rgba(29, 109, 125, 1) 100%);
+background: #ffe3ed;
+background: linear-gradient(135deg, rgba(255, 227, 237, 1) 0%, rgba(201, 159, 187, 1) 12%, rgba(242, 172, 239, 1) 28%, rgba(184, 217, 255, 1) 58%, rgba(148, 187, 233, 1) 100%);
 min-height:100vh;
 }
 
