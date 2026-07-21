@@ -138,7 +138,7 @@ const cities=[
         {
             id:"shavedice",
             shop:"Shari Shari Kakigori House",
-            image:"assets/ice_shop.jpg",
+            image:"ice_shop.jpg",
             description:"A popular dessert chain known for specializing in authentic artisanal Japanese shaved ice, commonly known as kakigori",
             dish:"Kyoto Uji Kintoki ",
             dishimage:"assets/ice.jpg",
