@@ -138,10 +138,10 @@ const cities=[
         {
             id:"shavedice",
             shop:"Shari Shari Kakigori House",
-            image:"ice_shop.jpg",
+            image:"assets/ice_shop.jpg",
             description:"A popular dessert chain known for specializing in authentic artisanal Japanese shaved ice, commonly known as kakigori",
             dish:"Kyoto Uji Kintoki ",
-            dishimage:"assets/ice.jpg",
+            dishimage:"ice.jpg",
             price:"$$ around $60 per person",
             address:"There are many branches,please copy the shop name and search for your nearest branches.",
             map:"https://www.google.com/maps/search/shari+shari/@22.2867685,114.1110944,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
@@ -368,6 +368,11 @@ function detailedScreen(cityId, restaurantId) {
     dishImg.className = "dish-thumb";
 
     const dishText = document.createElement("div");
+
+    const dishLabel=document.createElement("span");
+    dishLabel.className="dish-label";
+    dishLabel.textContent="Recommended Dish";
+
     const dishName = document.createElement("h3");
     dishName.textContent = restaurant.dish;
 
@@ -393,10 +398,11 @@ function detailedScreen(cityId, restaurantId) {
     map.rel="noopener noreferrer";
 
     const mapimg=document.createElement("img");
-    img.src="assets/map.png";
-    img.alt="Open in Google Map";
-    img.width= 40;
+    mapimg.src="assets/map.png";
+    mapimg.alt="Open in Google Map";
+    mapimg.width= 24;
     
+    map.className="maplink";
     map.appendChild(img);
     right.appendChild(map);
 
@@ -416,5 +422,6 @@ function detailedScreen(cityId, restaurantId) {
 
 /*Screen loading*/
 document.addEventListener("DOMContentLoaded", startScreen);
+
 
 
