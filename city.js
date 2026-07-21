@@ -305,7 +305,7 @@ const cities=[
             image:"assets/tivoli_shop.jpg",
             description:"A old-fashioned basement restaurant that serve a wide variety of traditional Danish food.",
             dish:"Raw beef tartare with egg yolk",
-            dishimage:"assets/tivoli.jpg,",
+            dishimage:"tivoli.jpg,",
             price:"$$ kr100-150 per person",
             address:"Vester Voldgade 91, 1470 København, Denmark",
             map:"https://www.google.com/maps/place/Tivolihallen/@55.6744927,12.5730881,17z/data=!4m15!1m8!3m7!1s0x46525313b515cb95:0xe42c12ec2e006b38!2sTivolihallen!8m2!3d55.6746023!4d12.5731193!10e9!16s%2Fg%2F1v6qg71g!3m5!1s0x46525313b515cb95:0xe42c12ec2e006b38!8m2!3d55.6746023!4d12.5731193!16s%2Fg%2F1v6qg71g?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D"
