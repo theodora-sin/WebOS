@@ -139,7 +139,7 @@ function updateresult(){
     <h3>You are a Comfort Cozy Diner!</h3>
     <p>Recommend dish:Budae-jiigae"</p>
     <p>Heartyfusion hot pot combine with hot dogs,spam,kimchi, instant ramen,korean chill paste and cheese and egg.</p>
-    <img src="assets/Budae-jiigae.jpg" alt="budae jiigae"class="quizimg">`;
+    <img src="assets/Budae-jjigae.jpg" alt="budae jiigae"class="quizimg">`;
     console.log("You are a Comfort Cozy Diner!");
   }
   else if (FreshCrispEnthusiastscore >= 2) {
