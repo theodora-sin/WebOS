@@ -209,12 +209,13 @@ const cities=[
         {
             id:"korean",
             shop:"WooJung",
-            image:"asssets/korean_shop.jpg",
+            image:"assets/korean_shop.jpg",
             description:"Serving authetic Korean food with many highlighting dishes, it has generous price and portion.",
             dish:"KKanpung-Gi",
+            dishimage:"assets/korean.jpg",
             price:"$$, £10–20 per person",
             address:"73 New Oxford St, London WC1A 1DG"
-        }    
+        }     
 
 
         ]
